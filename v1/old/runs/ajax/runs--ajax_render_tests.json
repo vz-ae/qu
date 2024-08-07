@@ -1,0 +1,174 @@
+[
+    {
+        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
+        "count": 7
+    },
+    {
+        "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 13)",
+        "count": 4
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
+        "count": 3
+    },
+    {
+        "sql": "SET AUTOCOMMIT = 1",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_remember_me_disabled')",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8')",
+        "count": 2
+    },
+    {
+        "sql": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'primary_attachment_db')",
+        "count": 2
+    },
+    {
+        "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
+        "count": 1
+    },
+    {
+        "sql": "SET AUTOCOMMIT = 0",
+        "count": 1
+    },
+    {
+        "sql": "START TRANSACTION",
+        "count": 1
+    },
+    {
+        "sql": "UPDATE `users` SET `last_activity` = 1723071074 WHERE (`id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "COMMIT",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nORDER BY `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `banners`\nLIMIT 0,1",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1722988800) AND (`end_date` >= 1723075199) AND (`active` = 1)\nORDER BY `start_date`",
+        "count": 1
+    },
+    {
+        "sql": "UPDATE `banners` SET `force_reset_cookie` = 0",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_logins`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_logins`\nWHERE (`name` = 'vasyl.zhdankin@agileengine.com')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `roles`\nORDER BY `display_order` ASC, `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 1)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (4,6,14,1,2,15,3,10,12,13))",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 2)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (7,8,9,11,16))",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `tests`.`id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nWHERE (`run_id` = 13) AND (`is_selected` = 1) AND (((`tests`.`assignedto_id` = 1)))",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `suites`\nWHERE (`id` = 2)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT filters\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 13)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`tests`.`status_id`,`tests`.`is_completed`,`tests`.`case_id`,`tests`.`content_id`,`tests`.`added_dynamic`,`cases`.`section_id`,`cases`.`template_id`,`cases`.`title`,`cases`.`priority_id`,`cases`.`refs`,`cases`.`estimate`,`cases`.`type_id`,`cases`.`display_order`,`tests`.`id` AS `tests_id`,`cases`.`title` AS `cases_title`,`tests`.`assignedto_id` AS `tests_assignedto_id`,(SELECT\n                    `defects`\n                FROM\n                    test_changes\n                WHERE\n                    id = tests.last_status_change_id)\n                AS `tests_defects`,`sections`.`name` AS `cases_section_name`\nFROM `tests`\nJOIN `cases` ON tests.content_id = cases.id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`tests`.`run_id` = 13) AND (`cases`.`is_deleted` = 0) AND (`tests`.`is_selected` = 1) AND (`tests`.`id` IN (2806,2807,2808,2813,2814,2815,2818,2819,2821,2826,2827,2828,2829,2832,2835,2841,2849,2850,2853,2854,2855,2859,2860,2861,2863,2864,2866,2869,2870,2872,2874,2876,2882,2884,2885,2886,2887,2890,2893,2895,2906,2914,2915,2917,2918,2920,2923,2924,2926,2930,2932,2934,2935,2937,2942,2943,2947,2949,2950,2951,2953,2955,2958,2959,2962,2964,2969,2971,2972,2973,2974,2975,2977,2981,2983,2988,2989,2990,2992,2993,2994,2999,3001,3003,3006,3009,3010,3012,3014,3017,3019,3020,3021,3028))\nORDER BY `sections`.`display_order`, `cases`.`display_order`\nLIMIT 0,500",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `sections`\nWHERE (`suite_id` = 2)\nORDER BY `display_order`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`id` = 3)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`project_id` = 2)\nORDER BY `name`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `test_changes`.*\nFROM `test_changes`\nJOIN `tests` ON test_changes.test_id = tests.id\nJOIN `cases` ON tests.content_id = cases.id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`test_changes`.`run_id` = 13) AND (`tests`.`is_selected` = 1)\nORDER BY `sections`.`display_order`, `cases`.`display_order`, `test_changes`.`test_id`, `test_changes`.`id` DESC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `case_statuses`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nORDER BY `name`",
+        "count": 1
+    }
+]

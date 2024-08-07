@@ -1,0 +1,106 @@
+[
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
+        "count": 3
+    },
+    {
+        "sql": "SET AUTOCOMMIT = 1",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_remember_me_disabled')",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8')",
+        "count": 2
+    },
+    {
+        "sql": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
+        "count": 2
+    },
+    {
+        "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
+        "count": 1
+    },
+    {
+        "sql": "SET AUTOCOMMIT = 0",
+        "count": 1
+    },
+    {
+        "sql": "START TRANSACTION",
+        "count": 1
+    },
+    {
+        "sql": "UPDATE `users` SET `last_activity` = 1723069510 WHERE (`id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "COMMIT",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nORDER BY `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `banners`\nLIMIT 0,1",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1722988800) AND (`end_date` >= 1723075199) AND (`active` = 1)\nORDER BY `start_date`",
+        "count": 1
+    },
+    {
+        "sql": "UPDATE `banners` SET `force_reset_cookie` = 0",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_logins`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_logins`\nWHERE (`name` = 'vasyl.zhdankin@agileengine.com')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `roles`\nORDER BY `display_order` ASC, `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "\r\n\t-- runs_with_todos\r\n\tSELECT\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\tCOUNT(tests.id) as count\r\n\tFROM\r\n\t\truns\r\n\tJOIN\r\n\t\ttests\r\n\t\t\tON\r\n\t\truns.id = tests.run_id\r\n\tWHERE\r\n\t\truns.project_id = 2 AND\r\n\t\truns.is_completed = 0 AND\r\n\t\ttests.is_selected = 1 AND\r\n\t\ttests.assignedto_id = 1 AND\r\n\t\ttests.status_id != 1\r\n\tGROUP BY\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\truns.created_on\r\n\tORDER BY\r\n\t\truns.created_on desc",
+        "count": 1
+    }
+]

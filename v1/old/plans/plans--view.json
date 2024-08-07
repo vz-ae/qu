@@ -1,0 +1,202 @@
+[
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
+        "count": 3
+    },
+    {
+        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
+        "count": 3
+    },
+    {
+        "sql": "SET AUTOCOMMIT = 1",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_remember_me_disabled')",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8')",
+        "count": 2
+    },
+    {
+        "sql": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
+        "count": 2
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'primary_attachment_db')",
+        "count": 2
+    },
+    {
+        "sql": "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'secure_cookie')",
+        "count": 2
+    },
+    {
+        "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
+        "count": 1
+    },
+    {
+        "sql": "SET AUTOCOMMIT = 0",
+        "count": 1
+    },
+    {
+        "sql": "START TRANSACTION",
+        "count": 1
+    },
+    {
+        "sql": "UPDATE `users` SET `last_activity` = 1723070957 WHERE (`id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "COMMIT",
+        "count": 1
+    },
+    {
+        "sql": "UPDATE `sessions` SET `session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8',`last_activity` = 1723070973,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1723068426,\\\"user_id\\\":1,\\\"rememberme\\\":true,\\\"csrf\\\":\\\"ETduPtRFE90TwetE5HmY\\\"}',`user_id` = 1 WHERE (`id` = 9)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 1) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nORDER BY `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `banners`\nLIMIT 0,1",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1722988800) AND (`end_date` >= 1723075199) AND (`active` = 1)\nORDER BY `start_date`",
+        "count": 1
+    },
+    {
+        "sql": "UPDATE `banners` SET `force_reset_cookie` = 0",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_logins`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_logins`\nWHERE (`name` = 'vasyl.zhdankin@agileengine.com')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 10) AND (`is_plan` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `roles`\nORDER BY `display_order` ASC, `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `runs`.*,`runs`.`name` AS `entry_name`\nFROM `runs`\nWHERE (`plan_id` = 10)\nORDER BY `entry_index` ASC, `entry_id` ASC, `config` ASC\nLIMIT 0,25",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`id` = 3)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_exports`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 3) AND (`format` = 'csv')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `projects`.`id`\nFROM `runs`\nJOIN `projects` ON projects.id=runs.project_id\nWHERE (`runs`.`id` = '10')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `preferences`\nWHERE (`user_id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `runs`\nWHERE (`plan_id` = 10)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 1)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (4,6,14,1,2,15,3,10,12,13))",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 2)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (7,8,9,11,16))",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `uiscripts`\nWHERE (`is_active` = 1)\nORDER BY `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'tr_enterprise_banner_display')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nLEFT JOIN `roles` ON roles.id = users.role_id\nWHERE (`users`.`id` = 1) AND (`roles`.`is_project_admin` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nORDER BY `name`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_custom_theme_colors')",
+        "count": 1
+    }
+]
