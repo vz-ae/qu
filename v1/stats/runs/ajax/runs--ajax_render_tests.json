@@ -1,0 +1,20 @@
+{
+    "removed": [
+        "SELECT *\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_remember_me_disabled')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'primary_attachment_db')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
+        "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
+        "SELECT *\nFROM `user_logins`",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')"
+    ],
+    "reduced": [
+        {
+            "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
+            "was": 7,
+            "now": 1
+        }
+    ],
+    "reducedQueriesTotalCount": 18
+}

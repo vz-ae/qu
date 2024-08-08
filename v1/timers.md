@@ -1,0 +1,88 @@
+# temporary; not reliable; need separate speed tests
+
+## Old-New
+
+(not benchmark)
+
+* cases_edit_1_1
+0.6619918346405
+0.61766409873962
+
+* tests_ajax_reload_timer
+0.48665404319763
+0.25803995132446
+
+* updater_ajax_get_attachments_migration_status
+0.40294194221497
+0.27262091636658
+
+* cases_view_1
+0.72675585746765
+0.5012800693512
+
+* milestones_view_3
+0.69280290603638
+0.67173385620117
+
+* plans_view_10
+0.48817110061646
+0.49160695075989
+
+* projects_overview_2
+0.64896297454834
+0.60948395729065
+
+* tests_ajax_reload_timer
+0.24471592903137
+0.21532011032104
+
+* projects_ajax_chart
+0.24935388565063
+0.26297807693481
+
+* projects_ajax_chart_datetime
+0.33239078521729
+0.26081609725952
+
+* projects_ajax_render_todos
+0.35323095321655
+0.27565002441406
+
+
+
+* runs_overview_2
+0.53920292854309
+0.5309898853302
+
+* runs_view_13
+0.53570199012756
+0.57271099090576
+
+* runs_ajax_render_tests
+0.67994379997253
+0.75362801551819
+
+* updater_ajax_get_attachments_migration_status
+0.22874593734741
+0.32484817504883
+
+
+* suites_view_2
+0.60297989845276
+
+* suites_ajax_render_cases
+0.64596891403198
+
+* updater_ajax_get_attachments_migration_status
+0.25877594947815
+0.26717400550842
+
+
+* tests_view_2296
+0.56937217712402
+0.51616191864014
+
+* updater_ajax_get_attachments_migration_status
+0.24052286148071
+0.2997088432312
+

@@ -1,0 +1,13 @@
+{
+    "removed": [
+        "SELECT *\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_remember_me_disabled')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
+        "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
+        "SELECT *\nFROM `user_logins`",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')"
+    ],
+    "reduced": [],
+    "reducedQueriesTotalCount": 10
+}
