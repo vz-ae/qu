@@ -28,18 +28,6 @@
         "count": 2
     },
     {
-        "sql": "SELECT `id`,`role_id`\nFROM `users`\nWHERE (`is_active` = 1)",
-        "count": 2
-    },
-    {
-        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` IN (1))",
-        "count": 2
-    },
-    {
-        "sql": "SELECT *\nFROM `project_groups`\nWHERE (`project_id` = 2)",
-        "count": 2
-    },
-    {
         "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
         "count": 2
     },
@@ -64,7 +52,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1723070194 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1723212887 WHERE (`id` = 1)",
         "count": 1
     },
     {
@@ -72,7 +60,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `sessions` SET `session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8',`last_activity` = 1723070209,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1723068426,\\\"user_id\\\":1,\\\"rememberme\\\":true,\\\"csrf\\\":\\\"ETduPtRFE90TwetE5HmY\\\"}',`user_id` = 1 WHERE (`id` = 9)",
+        "sql": "UPDATE `sessions` SET `session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8',`last_activity` = 1723212892,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1723068426,\\\"user_id\\\":1,\\\"rememberme\\\":true,\\\"csrf\\\":\\\"ETduPtRFE90TwetE5HmY\\\"}',`user_id` = 1 WHERE (`id` = 9)",
         "count": 1
     },
     {
@@ -100,7 +88,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1722988800) AND (`end_date` >= 1723075199) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723161600) AND (`end_date` >= 1723247999) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
@@ -124,7 +112,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `suites`\nWHERE (`id` = 2)",
+        "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 13)",
         "count": 1
     },
     {
@@ -136,11 +124,15 @@
         "count": 1
     },
     {
-        "sql": "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'secure_cookie')",
+        "sql": "SELECT *\nFROM `suites`\nWHERE (`id` = 2)",
         "count": 1
     },
     {
-        "sql": "\r\n\t-- suites_header_no_deleted_cases\r\n\tSELECT\r\n\t\tid,\r\n\t\tid AS suite_id,\r\n\t\tname,\r\n\t\tname AS suite_name,\r\n\t\t(\r\n\t\t\tSELECT\r\n\t\t\t\tCOUNT(*)\r\n\t\t\tFROM\r\n\t\t\t\t\tsections\r\n\t\t\tWHERE\r\n\t\t\t\tsuite_id = suites.id\r\n\t\t\t) AS section_count,\r\n\t\t(\r\n\t\t\tSELECT\r\n\t\t\t\tCOUNT(*)\r\n\t\t\tFROM\r\n\t\t\t\t\tcases\r\n\t\t\tWHERE\r\n\t\t\t\tsuite_id = suites.id\r\n\t\t\tAND\r\n\t\t\t\tis_deleted = 0\r\n\t\t) AS case_count\r\n\tFROM\r\n\t\tsuites\r\n\tWHERE\r\n\t\tid = 2",
+        "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 10) AND (`is_plan` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`id` = 3)",
         "count": 1
     },
     {
@@ -156,26 +148,6 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `user_columns`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 5)",
-        "count": 1
-    },
-    {
-        "sql": "SELECT *\nFROM `user_columns`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 6)",
-        "count": 1
-    },
-    {
-        "sql": "SELECT *\nFROM `user_columns`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 1)",
-        "count": 1
-    },
-    {
-        "sql": "SELECT *\nFROM `user_filters`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 1)",
-        "count": 1
-    },
-    {
-        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 2",
-        "count": 1
-    },
-    {
         "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 2)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
         "count": 1
     },
@@ -184,19 +156,47 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `user_exports`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 1) AND (`format` = 'csv')",
+        "sql": "SELECT *\nFROM `user_columns`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 7)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `projects`\nORDER BY `name` ASC",
+        "sql": "SELECT *\nFROM `user_columns`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 2)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` IN (1,2)) AND (`user_id` = 1)",
+        "sql": "SELECT `id`,`role_id`\nFROM `users`\nWHERE (`is_active` = 1)",
         "count": 1
     },
     {
-        "sql": "SELECT `suites`.*,`projects`.`name` AS `project_name`,`projects`.`id` AS `project_id`\nFROM `suites`\nJOIN `projects` ON projects.id = suites.project_id\nWHERE (`suites`.`project_id` IN (1,2)) AND (`suites`.`is_copy` = 0)\nORDER BY `projects`.`name` ASC, `suites`.`name` ASC",
+        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` IN (1))",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `project_groups`\nWHERE (`project_id` = 2)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 13)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_filters`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 2)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_exports`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 2) AND (`format` = 'csv')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `tests`\nWHERE (`run_id` = 13) AND (`is_selected` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` IN (1))\nORDER BY `name` ASC",
         "count": 1
     },
     {
@@ -208,11 +208,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT `project_id`\nFROM `suites`\nWHERE (`id` = '2')",
-        "count": 1
-    },
-    {
-        "sql": "SELECT *\nFROM `users`\nWHERE (`id` IN (1))\nORDER BY `name` ASC",
+        "sql": "SELECT `projects`.`id`\nFROM `runs`\nJOIN `projects` ON projects.id=runs.project_id\nWHERE (`runs`.`id` = '13')",
         "count": 1
     },
     {
@@ -232,15 +228,15 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `templates`\nORDER BY `name`",
-        "count": 1
-    },
-    {
-        "sql": "SELECT `template_id`,`project_id`\nFROM `template_projects`\nWHERE (`template_id` IN (4,3,2,1))",
-        "count": 1
-    },
-    {
         "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order`",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nORDER BY `name`",
         "count": 1
     },
     {
