@@ -9,12 +9,8 @@
         "SELECT *\nFROM `user_logins`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')"
     ],
-    "reduced": [
-        {
-            "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
-            "was": 7,
-            "now": 1
-        }
-    ],
-    "reducedQueriesTotalCount": 18
+    "reduced": [],
+    "removedQueriesTotalCount": 12,
+    "reducedQueriesTotalCount": 0,
+    "totalQueriesOptimizedCount": 12
 }

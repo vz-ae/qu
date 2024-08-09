@@ -5,19 +5,30 @@
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'primary_attachment_db')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
+        "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 1) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
         "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
         "SELECT *\nFROM `user_logins`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
-        "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'secure_cookie')",
-        "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_custom_theme_colors')"
     ],
     "reduced": [
         {
             "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
-            "was": 3,
+            "was": 7,
+            "now": 1
+        },
+        {
+            "sql": "SELECT `id`,`role_id`\nFROM `users`\nWHERE (`is_active` = 1)",
+            "was": 2,
+            "now": 1
+        },
+        {
+            "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
+            "was": 2,
             "now": 1
         }
     ],
-    "reducedQueriesTotalCount": 17
+    "removedQueriesTotalCount": 14,
+    "reducedQueriesTotalCount": 8,
+    "totalQueriesOptimizedCount": 22
 }

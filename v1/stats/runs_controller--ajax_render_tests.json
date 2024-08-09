@@ -12,9 +12,11 @@
     "reduced": [
         {
             "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
-            "was": 3,
+            "was": 7,
             "now": 1
         }
     ],
-    "reducedQueriesTotalCount": 14
+    "removedQueriesTotalCount": 12,
+    "reducedQueriesTotalCount": 6,
+    "totalQueriesOptimizedCount": 18
 }

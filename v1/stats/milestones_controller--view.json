@@ -7,8 +7,18 @@
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
         "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
         "SELECT *\nFROM `user_logins`",
-        "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')"
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_custom_theme_colors')"
     ],
-    "reduced": [],
-    "reducedQueriesTotalCount": 12
+    "reduced": [
+        {
+            "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
+            "was": 3,
+            "now": 1
+        }
+    ],
+    "removedQueriesTotalCount": 14,
+    "reducedQueriesTotalCount": 2,
+    "totalQueriesOptimizedCount": 16
 }
