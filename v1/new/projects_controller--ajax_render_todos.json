@@ -28,7 +28,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1723108961 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1723211657 WHERE (`id` = 1)",
         "count": 1
     },
     {
@@ -48,7 +48,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723075200) AND (`end_date` >= 1723161599) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723161600) AND (`end_date` >= 1723247999) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
@@ -69,6 +69,22 @@
     },
     {
         "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `roles`\nORDER BY `display_order` ASC, `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "\r\n\t-- runs_with_todos\r\n\tSELECT\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\tCOUNT(tests.id) as count\r\n\tFROM\r\n\t\truns\r\n\tJOIN\r\n\t\ttests\r\n\t\t\tON\r\n\t\truns.id = tests.run_id\r\n\tWHERE\r\n\t\truns.project_id = 2 AND\r\n\t\truns.is_completed = 0 AND\r\n\t\ttests.is_selected = 1 AND\r\n\t\ttests.assignedto_id = 1 AND\r\n\t\ttests.status_id != 1\r\n\tGROUP BY\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\truns.created_on\r\n\tORDER BY\r\n\t\truns.created_on desc",
         "count": 1
     }
 ]
