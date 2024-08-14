@@ -32,7 +32,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1723211657 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1723633258 WHERE (`id` = 1)",
         "count": 1
     },
     {
@@ -52,7 +52,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723161600) AND (`end_date` >= 1723247999) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723593600) AND (`end_date` >= 1723679999) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
