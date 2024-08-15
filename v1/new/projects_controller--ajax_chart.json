@@ -12,10 +12,6 @@
         "count": 2
     },
     {
-        "sql": "SELECT *\nFROM `statuses`\nWHERE (`is_notapplicable` = 0)\nORDER BY `display_order` ASC",
-        "count": 2
-    },
-    {
         "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
         "count": 1
     },
@@ -32,7 +28,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1723633258 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1723748470 WHERE (`id` = 1)",
         "count": 1
     },
     {
@@ -52,7 +48,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723593600) AND (`end_date` >= 1723679999) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723680000) AND (`end_date` >= 1723766399) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
@@ -93,6 +89,10 @@
     },
     {
         "sql": "\r\n\t-- statuses_is_not_applicable_get\r\n\tSELECT\r\n\t\t*\r\n\tFROM\r\n\t\tstatuses\r\n\tWHERE\r\n\t\tis_notapplicable != 0",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nWHERE (`is_notapplicable` = 0)\nORDER BY `display_order` ASC",
         "count": 1
     }
 ]

@@ -28,7 +28,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1723722288 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1723723568 WHERE (`id` = 1)",
         "count": 1
     },
     {
