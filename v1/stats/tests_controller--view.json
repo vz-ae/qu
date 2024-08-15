@@ -4,6 +4,7 @@
         "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` IN (1))",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_remember_me_disabled')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'primary_attachment_db')",
+        "SELECT *\nFROM `users`\nWHERE (`id` IN (1))\nORDER BY `name` ASC",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
         "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
@@ -16,6 +17,21 @@
         {
             "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
             "was": 5,
+            "now": 1
+        },
+        {
+            "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 11)",
+            "was": 4,
+            "now": 1
+        },
+        {
+            "sql": "SELECT *\nFROM `cases`\nWHERE (`id` = 1)",
+            "was": 3,
+            "now": 1
+        },
+        {
+            "sql": "SELECT *\nFROM `case_assocs`\nWHERE (`case_id` = 1)",
+            "was": 3,
             "now": 1
         },
         {
@@ -39,7 +55,7 @@
             "now": 1
         }
     ],
-    "removedQueriesTotalCount": 17,
-    "reducedQueriesTotalCount": 10,
-    "totalQueriesOptimizedCount": 27
+    "removedQueriesTotalCount": 19,
+    "reducedQueriesTotalCount": 17,
+    "totalQueriesOptimizedCount": 36
 }

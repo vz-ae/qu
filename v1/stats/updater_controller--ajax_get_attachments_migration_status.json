@@ -7,10 +7,11 @@
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
         "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
         "SELECT *\nFROM `user_logins`",
-        "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')"
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_migration_status')"
     ],
     "reduced": [],
-    "removedQueriesTotalCount": 12,
+    "removedQueriesTotalCount": 13,
     "reducedQueriesTotalCount": 0,
-    "totalQueriesOptimizedCount": 12
+    "totalQueriesOptimizedCount": 13
 }
