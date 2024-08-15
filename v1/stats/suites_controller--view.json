@@ -3,6 +3,7 @@
         "SELECT *\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_remember_me_disabled')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'primary_attachment_db')",
+        "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` IN (1))",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
         "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 1) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
@@ -23,12 +24,17 @@
             "now": 1
         },
         {
+            "sql": "SELECT *\nFROM `project_groups`\nWHERE (`project_id` = 2)",
+            "was": 2,
+            "now": 1
+        },
+        {
             "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
             "was": 2,
             "now": 1
         }
     ],
-    "removedQueriesTotalCount": 14,
-    "reducedQueriesTotalCount": 8,
-    "totalQueriesOptimizedCount": 22
+    "removedQueriesTotalCount": 16,
+    "reducedQueriesTotalCount": 9,
+    "totalQueriesOptimizedCount": 25
 }

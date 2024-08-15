@@ -9,6 +9,7 @@
         "SELECT *\nFROM `user_logins`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')",
+        "SELECT *\nFROM `users`\nORDER BY `name`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_custom_theme_colors')"
     ],
     "reduced": [
@@ -18,7 +19,7 @@
             "now": 1
         }
     ],
-    "removedQueriesTotalCount": 14,
+    "removedQueriesTotalCount": 15,
     "reducedQueriesTotalCount": 2,
-    "totalQueriesOptimizedCount": 16
+    "totalQueriesOptimizedCount": 17
 }

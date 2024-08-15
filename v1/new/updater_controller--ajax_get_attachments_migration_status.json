@@ -28,11 +28,19 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1723637580 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1723718834 WHERE (`id` = 1)",
         "count": 1
     },
     {
         "sql": "COMMIT",
+        "count": 1
+    },
+    {
+        "sql": "UPDATE `sessions` SET `session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8',`last_activity` = 1723718838,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1723068426,\\\"user_id\\\":1,\\\"rememberme\\\":true,\\\"csrf\\\":\\\"ETduPtRFE90TwetE5HmY\\\"}',`user_id` = 1 WHERE (`id` = 9)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 1) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
         "count": 1
     },
     {
@@ -48,7 +56,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723593600) AND (`end_date` >= 1723679999) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723680000) AND (`end_date` >= 1723766399) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
@@ -69,10 +77,6 @@
     },
     {
         "sql": "SELECT *\nFROM `users`\nLEFT JOIN `roles` ON roles.id = users.role_id\nWHERE (`users`.`id` = 1) AND (`roles`.`is_project_admin` = 1)",
-        "count": 1
-    },
-    {
-        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_migration_status')",
         "count": 1
     }
 ]

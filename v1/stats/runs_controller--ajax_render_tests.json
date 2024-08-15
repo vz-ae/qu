@@ -7,7 +7,8 @@
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
         "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
         "SELECT *\nFROM `user_logins`",
-        "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')"
+        "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
+        "SELECT *\nFROM `users`\nORDER BY `name`"
     ],
     "reduced": [
         {
@@ -16,7 +17,7 @@
             "now": 1
         }
     ],
-    "removedQueriesTotalCount": 12,
+    "removedQueriesTotalCount": 13,
     "reducedQueriesTotalCount": 6,
-    "totalQueriesOptimizedCount": 18
+    "totalQueriesOptimizedCount": 19
 }

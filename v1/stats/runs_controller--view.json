@@ -8,7 +8,9 @@
         "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
         "SELECT *\nFROM `user_logins`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
+        "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` IN (1))",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')",
+        "SELECT *\nFROM `users`\nORDER BY `name`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_custom_theme_colors')"
     ],
     "reduced": [
@@ -23,7 +25,7 @@
             "now": 1
         }
     ],
-    "removedQueriesTotalCount": 14,
+    "removedQueriesTotalCount": 16,
     "reducedQueriesTotalCount": 7,
-    "totalQueriesOptimizedCount": 21
+    "totalQueriesOptimizedCount": 23
 }
