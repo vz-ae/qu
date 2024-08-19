@@ -8,8 +8,14 @@
         "SELECT *\nFROM `user_logins`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')"
     ],
-    "reduced": [],
+    "reduced": [
+        {
+            "sql": "SELECT *\nFROM `statuses`\nWHERE (`is_notapplicable` = 0)\nORDER BY `display_order` ASC",
+            "was": 2,
+            "now": 1
+        }
+    ],
     "removedQueriesTotalCount": 10,
-    "reducedQueriesTotalCount": 0,
-    "totalQueriesOptimizedCount": 10
+    "reducedQueriesTotalCount": 1,
+    "totalQueriesOptimizedCount": 11
 }

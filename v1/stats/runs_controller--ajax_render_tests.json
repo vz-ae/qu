@@ -15,9 +15,14 @@
             "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
             "was": 7,
             "now": 1
+        },
+        {
+            "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 13)",
+            "was": 4,
+            "now": 1
         }
     ],
     "removedQueriesTotalCount": 13,
-    "reducedQueriesTotalCount": 6,
-    "totalQueriesOptimizedCount": 19
+    "reducedQueriesTotalCount": 9,
+    "totalQueriesOptimizedCount": 22
 }

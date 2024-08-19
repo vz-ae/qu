@@ -9,6 +9,7 @@
         "SELECT *\nFROM `user_logins`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
         "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` IN (1))",
+        "SELECT *\nFROM `users`\nWHERE (`id` IN (1))\nORDER BY `name` ASC",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')",
         "SELECT *\nFROM `users`\nORDER BY `name`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_custom_theme_colors')"
@@ -25,7 +26,7 @@
             "now": 1
         }
     ],
-    "removedQueriesTotalCount": 16,
+    "removedQueriesTotalCount": 17,
     "reducedQueriesTotalCount": 7,
-    "totalQueriesOptimizedCount": 23
+    "totalQueriesOptimizedCount": 24
 }

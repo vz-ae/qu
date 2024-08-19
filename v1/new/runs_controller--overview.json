@@ -28,7 +28,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1723749992 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1724062186 WHERE (`id` = 1)",
         "count": 1
     },
     {
@@ -36,7 +36,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `sessions` SET `session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8',`last_activity` = 1723749998,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1723068426,\\\"user_id\\\":1,\\\"rememberme\\\":true,\\\"csrf\\\":\\\"ETduPtRFE90TwetE5HmY\\\"}',`user_id` = 1 WHERE (`id` = 9)",
+        "sql": "UPDATE `sessions` SET `session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8',`last_activity` = 1724063136,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1723068426,\\\"user_id\\\":1,\\\"rememberme\\\":true,\\\"csrf\\\":\\\"ETduPtRFE90TwetE5HmY\\\"}',`user_id` = 1 WHERE (`id` = 9)",
         "count": 1
     },
     {
@@ -56,7 +56,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1723680000) AND (`end_date` >= 1723766399) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724025600) AND (`end_date` >= 1724111999) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
@@ -97,6 +97,78 @@
     },
     {
         "sql": "SELECT `runs`.`id`,`runs`.`name`,`runs`.`config`,`runs`.`user_id`,`runs`.`created_on`,`runs`.`assignedto_id`,`runs`.`milestone_id`,`runs`.`entries`,`runs`.`is_plan`,`runs`.`is_editable`,`runs`.`passed_count`,`runs`.`retest_count`,`runs`.`failed_count`,`runs`.`untested_count`,`runs`.`blocked_count`,`runs`.`custom_status1_count`,`runs`.`custom_status2_count`,`runs`.`custom_status3_count`,`runs`.`custom_status4_count`,`runs`.`custom_status5_count`,`runs`.`custom_status6_count`,`runs`.`custom_status7_count`\nFROM `runs`\nWHERE (`runs`.`project_id` IN (2)) AND (`runs`.`is_completed` = 0) AND (runs.plan_id IS NULL) AND ((runs.milestone_id IS NULL)\n                OR\n            (EXISTS\n                (SELECT\n                    *\n                FROM\n                    milestones\n                WHERE\n                    id = runs.milestone_id AND\n                    is_started = 1 AND\n                    is_completed = 0\n                )\n            ))\nORDER BY `runs`.`id` DESC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT filters\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 16)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`run_id` = 16) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT filters\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 8)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`run_id` = 8) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT filters\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 7)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`run_id` = 7) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `runs`.`id`,`runs`.`name`,`runs`.`config`,`runs`.`user_id`,`runs`.`created_on`,`runs`.`assignedto_id`,`runs`.`milestone_id`,`runs`.`entries`,`runs`.`is_plan`,`runs`.`is_editable`,`runs`.`passed_count`,`runs`.`retest_count`,`runs`.`failed_count`,`runs`.`untested_count`,`runs`.`blocked_count`,`runs`.`custom_status1_count`,`runs`.`custom_status2_count`,`runs`.`custom_status3_count`,`runs`.`custom_status4_count`,`runs`.`custom_status5_count`,`runs`.`custom_status6_count`,`runs`.`custom_status7_count`\nFROM `runs`\nWHERE (`runs`.`project_id` IN (2)) AND (`runs`.`is_completed` = 0) AND (runs.plan_id IS NULL) AND ((runs.milestone_id IS NULL)\n                OR\n            (EXISTS\n                (SELECT\n                    *\n                FROM\n                    milestones\n                WHERE\n                    id = runs.milestone_id AND\n                    is_started = 1 AND\n                    is_completed = 0\n                )\n            ))\nORDER BY `runs`.`id` DESC\nLIMIT 0,25",
+        "count": 1
+    },
+    {
+        "sql": "\r\n\t-- runs_upcoming\r\n\tSELECT\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\truns.config,\r\n\t\truns.user_id,\r\n\t\truns.created_on,\r\n\t\truns.assignedto_id,\r\n\t\truns.milestone_id,\r\n\t\truns.is_plan,\r\n\t\truns.is_editable,\r\n\t\truns.passed_count,\r\n\t\truns.retest_count,\r\n\t\truns.failed_count,\r\n\t\truns.untested_count,\r\n\t\truns.blocked_count,\r\n\t\truns.custom_status1_count,\r\n\t\truns.custom_status2_count,\r\n\t\truns.custom_status3_count,\r\n\t\truns.custom_status4_count,\r\n\t\truns.custom_status5_count,\r\n\t\truns.custom_status6_count,\r\n\t\truns.custom_status7_count,\r\n\t\truns.is_completed,\r\n\t\tmilestones.start_on,\r\n\t\tmilestones.due_on\r\n\tFROM\r\n\t\truns\r\n\tJOIN\r\n\t\tmilestones\r\n\t\t\tON\r\n\t\tmilestones.id = runs.milestone_id\r\n\tWHERE\r\n\t\truns.project_id = 2 AND\r\n\t\truns.is_completed = 0 AND\r\n\t\truns.plan_id IS NULL AND\r\n\t\tmilestones.is_started = 0 AND\r\n\t\tmilestones.is_completed = 0\r\n\tORDER BY\r\n\t\tmilestones.start_on,\r\n\t\truns.name",
+        "count": 1
+    },
+    {
+        "sql": "\r\n\t-- runs_completion_pending\r\n\tSELECT\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\truns.config,\r\n\t\truns.user_id,\r\n\t\truns.created_on,\r\n\t\truns.assignedto_id,\r\n\t\truns.milestone_id,\r\n\t\truns.is_plan,\r\n\t\truns.is_editable,\r\n\t\truns.passed_count,\r\n\t\truns.retest_count,\r\n\t\truns.failed_count,\r\n\t\truns.untested_count,\r\n\t\truns.blocked_count,\r\n\t\truns.custom_status1_count,\r\n\t\truns.custom_status2_count,\r\n\t\truns.custom_status3_count,\r\n\t\truns.custom_status4_count,\r\n\t\truns.custom_status5_count,\r\n\t\truns.custom_status6_count,\r\n\t\truns.custom_status7_count\r\n\tFROM\r\n\t\truns\r\n\tJOIN\r\n\t\tmilestones\r\n\t\t\tON\r\n\t\tmilestones.id = runs.milestone_id\r\n\tWHERE\r\n\t\truns.project_id IN (2) AND\r\n\t\truns.is_completed = 0 AND\r\n\t\truns.plan_id IS NULL AND\r\n\t\tmilestones.is_completed = 1",
+        "count": 1
+    },
+    {
+        "sql": "\r\n\t-- runs_completion_pending\r\n\tSELECT\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\truns.config,\r\n\t\truns.user_id,\r\n\t\truns.created_on,\r\n\t\truns.assignedto_id,\r\n\t\truns.milestone_id,\r\n\t\truns.is_plan,\r\n\t\truns.is_editable,\r\n\t\truns.passed_count,\r\n\t\truns.retest_count,\r\n\t\truns.failed_count,\r\n\t\truns.untested_count,\r\n\t\truns.blocked_count,\r\n\t\truns.custom_status1_count,\r\n\t\truns.custom_status2_count,\r\n\t\truns.custom_status3_count,\r\n\t\truns.custom_status4_count,\r\n\t\truns.custom_status5_count,\r\n\t\truns.custom_status6_count,\r\n\t\truns.custom_status7_count\r\n\tFROM\r\n\t\truns\r\n\tJOIN\r\n\t\tmilestones\r\n\t\t\tON\r\n\t\tmilestones.id = runs.milestone_id\r\n\tWHERE\r\n\t\truns.project_id = 2 AND\r\n\t\truns.is_completed = 0 AND\r\n\t\truns.plan_id IS NULL AND\r\n\t\tmilestones.is_completed = 1\r\n\tLIMIT 0,25",
+        "count": 1
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `runs`\nWHERE (`project_id` = 2) AND (plan_id IS NULL) AND (`is_completed` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `runs`.*\nFROM `runs`\nWHERE (`project_id` = 2) AND (plan_id IS NULL) AND (`is_completed` = 1)\nORDER BY `completed_on` DESC\nLIMIT 0,25",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `suites`\nWHERE (`project_id` = 2) AND (`is_copy` = 0)\nORDER BY `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `uiscripts`\nWHERE (`is_active` = 1)\nORDER BY `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'tr_enterprise_banner_display')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nLEFT JOIN `roles` ON roles.id = users.role_id\nWHERE (`users`.`id` = 1) AND (`roles`.`is_project_admin` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order`",
         "count": 1
     }
 ]

@@ -16,9 +16,39 @@
             "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
             "was": 2,
             "now": 1
+        },
+        {
+            "sql": "SELECT filters\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 16)",
+            "was": 2,
+            "now": 1
+        },
+        {
+            "sql": "SELECT COUNT(*) AS `row_count`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`run_id` = 16) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",
+            "was": 2,
+            "now": 1
+        },
+        {
+            "sql": "SELECT filters\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 8)",
+            "was": 2,
+            "now": 1
+        },
+        {
+            "sql": "SELECT COUNT(*) AS `row_count`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`run_id` = 8) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",
+            "was": 2,
+            "now": 1
+        },
+        {
+            "sql": "SELECT filters\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 7)",
+            "was": 2,
+            "now": 1
+        },
+        {
+            "sql": "SELECT COUNT(*) AS `row_count`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`run_id` = 7) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",
+            "was": 2,
+            "now": 1
         }
     ],
     "removedQueriesTotalCount": 14,
-    "reducedQueriesTotalCount": 1,
-    "totalQueriesOptimizedCount": 15
+    "reducedQueriesTotalCount": 7,
+    "totalQueriesOptimizedCount": 21
 }
