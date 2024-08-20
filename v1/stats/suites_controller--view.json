@@ -6,7 +6,6 @@
         "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` IN (1))",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
-        "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 1) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
         "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'database_version')",
         "SELECT *\nFROM `user_logins`",
         "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
@@ -35,7 +34,7 @@
             "now": 1
         }
     ],
-    "removedQueriesTotalCount": 17,
+    "removedQueriesTotalCount": 16,
     "reducedQueriesTotalCount": 9,
-    "totalQueriesOptimizedCount": 26
+    "totalQueriesOptimizedCount": 25
 }
