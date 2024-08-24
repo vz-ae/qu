@@ -4,7 +4,7 @@
         "count": 2
     },
     {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8')",
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = 'a7203bc4-07e9-464f-a33e-68596e0606b0')",
         "count": 2
     },
     {
@@ -28,7 +28,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1724167171 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1724516979 WHERE (`id` = 9)",
         "count": 1
     },
     {
@@ -36,11 +36,19 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 1)",
+        "sql": "UPDATE `sessions` SET `session_id` = 'a7203bc4-07e9-464f-a33e-68596e0606b0',`last_activity` = 1724516983,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1724503945,\\\"user_id\\\":9,\\\"csrf\\\":\\\"kp6dscI1IetnyqQM8hZJ\\\"}',`user_id` = 9 WHERE (`id` = 61250772)",
         "count": 1
     },
     {
-        "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 1)",
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 9) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 9)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 9)",
         "count": 1
     },
     {
@@ -48,7 +56,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724112000) AND (`end_date` >= 1724198399) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724457600) AND (`end_date` >= 1724543999) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
@@ -72,15 +80,15 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `milestones`\nWHERE (`id` = 3)",
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`id` = 43)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
+        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 15)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` = 1)",
+        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 15) AND (`user_id` = 9)",
         "count": 1
     },
     {
@@ -88,27 +96,27 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `milestones`\nWHERE (`project_id` = 2) AND (`parent_id` = 3) AND (`is_started` = 1) AND (`is_completed` = 0)",
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`project_id` = 15) AND (`parent_id` = 43) AND (`is_started` = 1) AND (`is_completed` = 0)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `milestones`\nWHERE (`project_id` = 2) AND (`parent_id` = 3) AND (`is_started` = 0) AND (`is_completed` = 0)",
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`project_id` = 15) AND (`parent_id` = 43) AND (`is_started` = 0) AND (`is_completed` = 0)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `milestones`\nWHERE (`project_id` = 2) AND (`is_completed` = 1) AND (`parent_id` = 3)\nORDER BY `completed_on` DESC",
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`project_id` = 15) AND (`is_completed` = 1) AND (`parent_id` = 43)\nORDER BY `completed_on` DESC",
         "count": 1
     },
     {
-        "sql": "\r\n\t-- milestones_run_headers\r\n\tSELECT\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\truns.created_on,\r\n\t\truns.user_id,\r\n\t\truns.is_plan,\r\n\t\truns.is_completed,\r\n\t\truns.config,\r\n\t\truns.is_editable,\r\n\t\truns.passed_count,\r\n\t\truns.blocked_count,\r\n\t\truns.untested_count,\r\n\t\truns.retest_count,\r\n\t\truns.failed_count,\r\n\t\truns.custom_status1_count,\r\n\t\truns.custom_status2_count,\r\n\t\truns.custom_status3_count,\r\n\t\truns.custom_status4_count,\r\n\t\truns.custom_status5_count,\r\n\t\truns.custom_status6_count,\r\n\t\truns.custom_status7_count\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\truns.milestone_id = 3 AND\r\n\t\truns.is_completed = 0 AND\r\n\t\truns.plan_id IS NULL\r\n\tORDER BY\r\n\t\truns.name ASC",
+        "sql": "\r\n\t-- milestones_run_headers\r\n\tSELECT\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\truns.created_on,\r\n\t\truns.user_id,\r\n\t\truns.is_plan,\r\n\t\truns.is_completed,\r\n\t\truns.config,\r\n\t\truns.is_editable,\r\n\t\truns.passed_count,\r\n\t\truns.blocked_count,\r\n\t\truns.untested_count,\r\n\t\truns.retest_count,\r\n\t\truns.failed_count,\r\n\t\truns.custom_status1_count,\r\n\t\truns.custom_status2_count,\r\n\t\truns.custom_status3_count,\r\n\t\truns.custom_status4_count,\r\n\t\truns.custom_status5_count,\r\n\t\truns.custom_status6_count,\r\n\t\truns.custom_status7_count\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\truns.milestone_id = 43 AND\r\n\t\truns.is_completed = 0 AND\r\n\t\truns.plan_id IS NULL\r\n\tORDER BY\r\n\t\truns.name ASC",
         "count": 1
     },
     {
-        "sql": "SELECT `runs`.*\nFROM `runs`\nWHERE (`milestone_id` = 3) AND (plan_id IS NULL) AND (`is_completed` = 1)\nORDER BY `completed_on` DESC\nLIMIT 0,25",
+        "sql": "SELECT `runs`.*\nFROM `runs`\nWHERE (`milestone_id` = 43) AND (plan_id IS NULL) AND (`is_completed` = 1)\nORDER BY `completed_on` DESC\nLIMIT 0,25",
         "count": 1
     },
     {
-        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `runs`\nWHERE (`milestone_id` = 3) AND (plan_id IS NULL) AND (`is_completed` = 1)",
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `runs`\nWHERE (`milestone_id` = 43) AND (plan_id IS NULL) AND (`is_completed` = 1)",
         "count": 1
     },
     {
@@ -116,11 +124,11 @@
         "count": 1
     },
     {
-        "sql": "\r\n\t-- milestones_stats\r\n\tSELECT\r\n\t\tSUM(runs.passed_count) AS passed_count,\r\n\t\tSUM(runs.blocked_count) AS blocked_count,\r\n\t\tSUM(runs.untested_count) AS untested_count,\r\n\t\tSUM(runs.retest_count) AS retest_count,\r\n\t\tSUM(runs.failed_count) AS failed_count,\r\n\t\tSUM(runs.custom_status1_count) AS custom_status1_count,\r\n\t\tSUM(runs.custom_status2_count) AS custom_status2_count,\r\n\t\tSUM(runs.custom_status3_count) AS custom_status3_count,\r\n\t\tSUM(runs.custom_status4_count) AS custom_status4_count,\r\n\t\tSUM(runs.custom_status5_count) AS custom_status5_count,\r\n\t\tSUM(runs.custom_status6_count) AS custom_status6_count,\r\n\t\tSUM(runs.custom_status7_count) AS custom_status7_count\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tmilestone_id = 3 AND\r\n\t\tplan_id IS NULL\r\n\tGROUP BY\r\n\t\tmilestone_id",
+        "sql": "\r\n\t-- milestones_stats\r\n\tSELECT\r\n\t\tSUM(runs.passed_count) AS passed_count,\r\n\t\tSUM(runs.blocked_count) AS blocked_count,\r\n\t\tSUM(runs.untested_count) AS untested_count,\r\n\t\tSUM(runs.retest_count) AS retest_count,\r\n\t\tSUM(runs.failed_count) AS failed_count,\r\n\t\tSUM(runs.custom_status1_count) AS custom_status1_count,\r\n\t\tSUM(runs.custom_status2_count) AS custom_status2_count,\r\n\t\tSUM(runs.custom_status3_count) AS custom_status3_count,\r\n\t\tSUM(runs.custom_status4_count) AS custom_status4_count,\r\n\t\tSUM(runs.custom_status5_count) AS custom_status5_count,\r\n\t\tSUM(runs.custom_status6_count) AS custom_status6_count,\r\n\t\tSUM(runs.custom_status7_count) AS custom_status7_count\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tmilestone_id = 43 AND\r\n\t\tplan_id IS NULL\r\n\tGROUP BY\r\n\t\tmilestone_id",
         "count": 1
     },
     {
-        "sql": "SELECT `id`\nFROM `milestones`\nWHERE (`parent_id` = 3)",
+        "sql": "SELECT `id`\nFROM `milestones`\nWHERE (`parent_id` = 43)",
         "count": 1
     },
     {
@@ -128,15 +136,15 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `user_exports`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 4) AND (`format` = 'csv')",
+        "sql": "SELECT *\nFROM `user_exports`\nWHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 4) AND (`format` = 'csv')",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `milestones_refs`\nWHERE (`project_id` = 2)",
+        "sql": "SELECT *\nFROM `milestones_refs`\nWHERE (`project_id` = 15)",
         "count": 1
     },
     {
-        "sql": "SELECT `project_id`\nFROM `milestones`\nWHERE (`id` = '3')",
+        "sql": "SELECT `project_id`\nFROM `milestones`\nWHERE (`id` = '43')",
         "count": 1
     },
     {
@@ -144,7 +152,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (4,6,14,1,2,15,3,10,12,13))",
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",
         "count": 1
     },
     {
@@ -152,11 +160,11 @@
         "count": 1
     },
     {
-        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (7,8,9,11,16))",
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `preferences`\nWHERE (`user_id` = 1)",
+        "sql": "SELECT *\nFROM `preferences`\nWHERE (`user_id` = 9)",
         "count": 1
     },
     {
@@ -164,15 +172,19 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'tr_enterprise_banner_display')",
+        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `users`\nLEFT JOIN `roles` ON roles.id = users.role_id\nWHERE (`users`.`id` = 1) AND (`roles`.`is_project_admin` = 1)",
+        "sql": "SELECT *\nFROM `users`\nLEFT JOIN `roles` ON roles.id = users.role_id\nWHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 137)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
         "count": 1
     }
 ]

@@ -8,7 +8,7 @@
         "count": 2
     },
     {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8')",
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = 'a7203bc4-07e9-464f-a33e-68596e0606b0')",
         "count": 2
     },
     {
@@ -28,7 +28,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1724167167 WHERE (`id` = 1)",
+        "sql": "UPDATE `users` SET `last_activity` = 1724516974 WHERE (`id` = 9)",
         "count": 1
     },
     {
@@ -36,19 +36,19 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `sessions` SET `session_id` = '2da2c4be-6a99-43c4-92ea-dc42d0eab7c8',`last_activity` = 1724167171,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1723068426,\\\"user_id\\\":1,\\\"rememberme\\\":true,\\\"csrf\\\":\\\"ETduPtRFE90TwetE5HmY\\\"}',`user_id` = 1 WHERE (`id` = 9)",
+        "sql": "UPDATE `sessions` SET `session_id` = 'a7203bc4-07e9-464f-a33e-68596e0606b0',`last_activity` = 1724516979,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1724503945,\\\"user_id\\\":9,\\\"csrf\\\":\\\"kp6dscI1IetnyqQM8hZJ\\\"}',`user_id` = 9 WHERE (`id` = 61250772)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 1) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 9) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 1)",
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 9)",
         "count": 1
     },
     {
-        "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 1)",
+        "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 9)",
         "count": 1
     },
     {
@@ -56,7 +56,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724112000) AND (`end_date` >= 1724198399) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724457600) AND (`end_date` >= 1724543999) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
@@ -80,27 +80,27 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `cases`\nWHERE (`id` = 1)",
+        "sql": "SELECT *\nFROM `cases`\nWHERE (`id` = 1401773)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `case_assocs`\nWHERE (`case_id` = 1)",
+        "sql": "SELECT *\nFROM `case_assocs`\nWHERE (`case_id` = 1401773)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `sections`\nWHERE (`id` = 1)",
+        "sql": "SELECT *\nFROM `sections`\nWHERE (`id` = 767)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `suites`\nWHERE (`id` = 2)",
+        "sql": "SELECT *\nFROM `suites`\nWHERE (`id` = 64)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 2)",
+        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 15)",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 2) AND (`user_id` = 1)",
+        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 15) AND (`user_id` = 9)",
         "count": 1
     },
     {
@@ -108,7 +108,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT `projects`.`id`\nFROM `cases`\nJOIN `sections` ON sections.id=cases.section_id\nJOIN `suites` ON suites.id=sections.suite_id\nJOIN `projects` ON projects.id=suites.project_id\nWHERE (`cases`.`id` = '1')",
+        "sql": "SELECT `projects`.`id`\nFROM `cases`\nJOIN `sections` ON sections.id=cases.section_id\nJOIN `suites` ON suites.id=sections.suite_id\nJOIN `projects` ON projects.id=suites.project_id\nWHERE (`cases`.`id` = '1401773')",
         "count": 1
     },
     {
@@ -116,11 +116,11 @@
         "count": 1
     },
     {
-        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (4,6,14,1,2,15,3,10,12,13))",
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `user_columns`\nWHERE (`user_id` = 1) AND (`project_id` = 2) AND (`area_id` = 1)",
+        "sql": "SELECT *\nFROM `user_columns`\nWHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 1)",
         "count": 1
     },
     {
@@ -128,19 +128,11 @@
         "count": 1
     },
     {
-        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (7,8,9,11,16))",
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",
         "count": 1
     },
     {
-        "sql": "SELECT `cases`.`id`,`cases`.`section_id`,`cases`.`template_id`,`cases`.`is_deleted`,`sections`.`name` AS `cases_section_name`\nFROM `cases`\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`sections`.`suite_id` = 2)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
-        "count": 1
-    },
-    {
-        "sql": "SELECT `id`,`role_id`\nFROM `users`\nWHERE (`is_active` = 1)",
-        "count": 1
-    },
-    {
-        "sql": "SELECT *\nFROM `project_groups`\nWHERE (`project_id` = 2)",
+        "sql": "SELECT `cases`.`id`,`cases`.`section_id`,`cases`.`template_id`,`cases`.`is_deleted`,`sections`.`name` AS `cases_section_name`\nFROM `cases`\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`sections`.`suite_id` = 64)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
         "count": 1
     },
     {
@@ -148,7 +140,27 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `preferences`\nWHERE (`user_id` = 1)",
+        "sql": "SELECT `id`,`role_id`\nFROM `users`\nWHERE (`is_active` = 1)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 15) AND (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `project_groups`\nWHERE (`project_id` = 15)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT `group_id`,`user_id`\nFROM `group_users`\nWHERE (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348)) AND (`group_id` IN (3,9))",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))\nORDER BY `name` ASC",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `preferences`\nWHERE (`user_id` = 9)",
         "count": 1
     },
     {
@@ -156,11 +168,11 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'tr_enterprise_banner_display')",
+        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `users`\nLEFT JOIN `roles` ON roles.id = users.role_id\nWHERE (`users`.`id` = 1) AND (`roles`.`is_project_admin` = 1)",
+        "sql": "SELECT *\nFROM `users`\nLEFT JOIN `roles` ON roles.id = users.role_id\nWHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",
         "count": 1
     },
     {
@@ -172,7 +184,15 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 1) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
+        "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 166)",
+        "count": 1
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 283)",
         "count": 1
     },
     {
