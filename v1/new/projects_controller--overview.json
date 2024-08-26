@@ -4,7 +4,7 @@
         "count": 2
     },
     {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = 'a7203bc4-07e9-464f-a33e-68596e0606b0')",
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '66a4a081-5211-42c9-bb62-df8c5fb21352')",
         "count": 2
     },
     {
@@ -28,7 +28,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1724516983 WHERE (`id` = 9)",
+        "sql": "UPDATE `users` SET `last_activity` = 1724682429 WHERE (`id` = 9)",
         "count": 1
     },
     {
@@ -36,7 +36,7 @@
         "count": 1
     },
     {
-        "sql": "UPDATE `sessions` SET `session_id` = 'a7203bc4-07e9-464f-a33e-68596e0606b0',`last_activity` = 1724516989,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1724503945,\\\"user_id\\\":9,\\\"csrf\\\":\\\"kp6dscI1IetnyqQM8hZJ\\\"}',`user_id` = 9 WHERE (`id` = 61250772)",
+        "sql": "UPDATE `sessions` SET `session_id` = '66a4a081-5211-42c9-bb62-df8c5fb21352',`last_activity` = 1724682435,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1724672770,\\\"user_id\\\":9,\\\"csrf\\\":\\\"2adpE0.97M4YQhsWmuXS\\\"}',`user_id` = 9 WHERE (`id` = 61250793)",
         "count": 1
     },
     {
@@ -56,7 +56,7 @@
         "count": 1
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724457600) AND (`end_date` >= 1724543999) AND (`active` = 1)\nORDER BY `start_date`",
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724630400) AND (`end_date` >= 1724716799) AND (`active` = 1)\nORDER BY `start_date`",
         "count": 1
     },
     {
