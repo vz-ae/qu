@@ -1,0 +1,2240 @@
+the_uri,the_full_uri,the_query,the_count,total_queries_count
+/cases/edit,/cases/edit/1401773/1,COMMIT,1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `cases`
+WHERE (`id` = 1401773)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `case_assocs`
+WHERE (`case_id` = 1401773)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `case_statuses`",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `case_types`
+ORDER BY `name`",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `priorities`
+ORDER BY `priority` DESC",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `project_groups`
+WHERE (`project_id` = 15)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `sections`
+WHERE (`id` = 767)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `sections`
+WHERE (`suite_id` = 64)
+ORDER BY `display_order`",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `shared_steps`
+WHERE (`project_id` = 15)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `suites`
+WHERE (`id` = 64)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `templates`
+ORDER BY `name`",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `users`
+WHERE (`id` = 166)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `users`
+WHERE (`id` = 283)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `users`
+WHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))
+ORDER BY `name` ASC",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `group_id`,`user_id`
+FROM `group_users`
+WHERE (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348)) AND (`group_id` IN (3,9))",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `id`,`name`,`parent_id`,`is_started`,`is_completed`
+FROM `milestones`
+WHERE (`project_id` = 15) AND (`is_completed` = 0)
+ORDER BY `completed_on` DESC, `start_on`, `due_on`, `name`",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `id`,`role_id`
+FROM `users`
+WHERE (`is_active` = 1)",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `projects`.`id`
+FROM `cases`
+JOIN `sections` ON sections.id=cases.section_id
+JOIN `suites` ON suites.id=sections.suite_id
+JOIN `projects` ON projects.id=suites.project_id
+WHERE (`cases`.`id` = '1401773')",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `template_id`,`project_id`
+FROM `template_projects`
+WHERE (`template_id` IN (12,4,11,2,8,6,5,10,9,1,3,7))",1,55
+/cases/edit,/cases/edit/1401773/1,"SELECT `variable_name`
+FROM `variables`
+WHERE (`project_id` = 15)
+ORDER BY `id`",1,55
+/cases/edit,/cases/edit/1401773/1,SET AUTOCOMMIT = 0,1,55
+/cases/edit,/cases/edit/1401773/1,SET AUTOCOMMIT = 1,2,55
+/cases/edit,/cases/edit/1401773/1,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,55
+/cases/edit,/cases/edit/1401773/1,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,55
+/cases/edit,/cases/edit/1401773/1,START TRANSACTION,1,55
+/cases/edit,/cases/edit/1401773/1,UPDATE `banners` SET `force_reset_cookie` = 0,1,55
+/cases/edit,/cases/edit/1401773/1,"UPDATE `sessions` SET `session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8',`last_activity` = 1724893377,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724881784,\""user_id\"":9,\""csrf\"":\""BV5863rOtU\\/YXVJdAEsb\""}',`user_id` = 9 WHERE (`id` = 61250799)",1,55
+/cases/edit,/cases/edit/1401773/1,UPDATE `users` SET `last_activity` = 1724888678 WHERE (`id` = 9),1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,COMMIT,1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `cases`
+WHERE (`id` = 1401773)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `case_assocs`
+WHERE (`case_id` = 1401773)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `case_statuses`",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `case_types`
+ORDER BY `name`",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 2)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `priorities`
+ORDER BY `priority` DESC",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `project_groups`
+WHERE (`project_id` = 15)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `sections`
+WHERE (`id` = 767)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `suites`
+WHERE (`id` = 64)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `users`
+WHERE (`id` = 166)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `users`
+WHERE (`id` = 283)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `users`
+WHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))
+ORDER BY `name` ASC",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_columns`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 1)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `cases`.`id`,`cases`.`section_id`,`cases`.`template_id`,`cases`.`is_deleted`,`sections`.`name` AS `cases_section_name`
+FROM `cases`
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`sections`.`suite_id` = 64)
+ORDER BY `sections`.`display_order`, `cases`.`display_order`",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `id`,`role_id`
+FROM `users`
+WHERE (`is_active` = 1)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `group_id`,`user_id`
+FROM `group_users`
+WHERE (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348)) AND (`group_id` IN (3,9))",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `projects`.`id`
+FROM `cases`
+JOIN `sections` ON sections.id=cases.section_id
+JOIN `suites` ON suites.id=sections.suite_id
+JOIN `projects` ON projects.id=suites.project_id
+WHERE (`cases`.`id` = '1401773')",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,SET AUTOCOMMIT = 0,1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,SET AUTOCOMMIT = 1,3,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',2,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,START TRANSACTION,1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,UPDATE `banners` SET `force_reset_cookie` = 0,1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"UPDATE `sessions` SET `session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8',`last_activity` = 1724893381,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724881784,\""user_id\"":9,\""csrf\"":\""BV5863rOtU\\/YXVJdAEsb\""}',`user_id` = 9 WHERE (`id` = 61250799)",1,55
+/cases/view,/cases/view/1401773&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,UPDATE `users` SET `last_activity` = 1724893377 WHERE (`id` = 9),1,55
+/milestones/view,/milestones/view/43,"
+	-- milestones_run_headers
+	SELECT
+		runs.id,
+		runs.name,
+		runs.created_on,
+		runs.user_id,
+		runs.is_plan,
+		runs.is_completed,
+		runs.config,
+		runs.is_editable,
+		runs.passed_count,
+		runs.blocked_count,
+		runs.untested_count,
+		runs.retest_count,
+		runs.failed_count,
+		runs.custom_status1_count,
+		runs.custom_status2_count,
+		runs.custom_status3_count,
+		runs.custom_status4_count,
+		runs.custom_status5_count,
+		runs.custom_status6_count,
+		runs.custom_status7_count
+	FROM
+		runs
+	WHERE
+		runs.milestone_id = 43 AND
+		runs.is_completed = 0 AND
+		runs.plan_id IS NULL
+	ORDER BY
+		runs.name ASC",1,50
+/milestones/view,/milestones/view/43,"
+	-- milestones_stats
+	SELECT
+		SUM(runs.passed_count) AS passed_count,
+		SUM(runs.blocked_count) AS blocked_count,
+		SUM(runs.untested_count) AS untested_count,
+		SUM(runs.retest_count) AS retest_count,
+		SUM(runs.failed_count) AS failed_count,
+		SUM(runs.custom_status1_count) AS custom_status1_count,
+		SUM(runs.custom_status2_count) AS custom_status2_count,
+		SUM(runs.custom_status3_count) AS custom_status3_count,
+		SUM(runs.custom_status4_count) AS custom_status4_count,
+		SUM(runs.custom_status5_count) AS custom_status5_count,
+		SUM(runs.custom_status6_count) AS custom_status6_count,
+		SUM(runs.custom_status7_count) AS custom_status7_count
+	FROM
+		runs
+	WHERE
+		milestone_id = 43 AND
+		plan_id IS NULL
+	GROUP BY
+		milestone_id",1,50
+/milestones/view,/milestones/view/43,COMMIT,1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 2)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `milestones_refs`
+WHERE (`project_id` = 15)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `milestones`
+WHERE (`id` = 43)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `milestones`
+WHERE (`project_id` = 15) AND (`is_completed` = 1) AND (`parent_id` = 43)
+ORDER BY `completed_on` DESC",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `milestones`
+WHERE (`project_id` = 15) AND (`parent_id` = 43) AND (`is_started` = 0) AND (`is_completed` = 0)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `milestones`
+WHERE (`project_id` = 15) AND (`parent_id` = 43) AND (`is_started` = 1) AND (`is_completed` = 0)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `statuses`
+ORDER BY `display_order` ASC",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `users`
+WHERE (`id` = 137)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `user_exports`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 4) AND (`format` = 'csv')",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",1,50
+/milestones/view,/milestones/view/43,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,50
+/milestones/view,/milestones/view/43,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,50
+/milestones/view,/milestones/view/43,"SELECT COUNT(*) AS `row_count`
+FROM `runs`
+WHERE (`milestone_id` = 43) AND (plan_id IS NULL) AND (`is_completed` = 1)",1,50
+/milestones/view,/milestones/view/43,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,50
+/milestones/view,/milestones/view/43,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",1,50
+/milestones/view,/milestones/view/43,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,50
+/milestones/view,/milestones/view/43,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,50
+/milestones/view,/milestones/view/43,"SELECT `id`
+FROM `milestones`
+WHERE (`parent_id` = 43)",1,50
+/milestones/view,/milestones/view/43,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,50
+/milestones/view,/milestones/view/43,"SELECT `project_id`
+FROM `milestones`
+WHERE (`id` = '43')",1,50
+/milestones/view,/milestones/view/43,"SELECT `runs`.*
+FROM `runs`
+WHERE (`milestone_id` = 43) AND (plan_id IS NULL) AND (`is_completed` = 1)
+ORDER BY `completed_on` DESC
+LIMIT 0,25",1,50
+/milestones/view,/milestones/view/43,SET AUTOCOMMIT = 0,1,50
+/milestones/view,/milestones/view/43,SET AUTOCOMMIT = 1,2,50
+/milestones/view,/milestones/view/43,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,50
+/milestones/view,/milestones/view/43,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,50
+/milestones/view,/milestones/view/43,START TRANSACTION,1,50
+/milestones/view,/milestones/view/43,UPDATE `banners` SET `force_reset_cookie` = 0,1,50
+/milestones/view,/milestones/view/43,"UPDATE `sessions` SET `session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8',`last_activity` = 1724893385,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724881784,\""user_id\"":9,\""csrf\"":\""BV5863rOtU\\/YXVJdAEsb\""}',`user_id` = 9 WHERE (`id` = 61250799)",1,50
+/milestones/view,/milestones/view/43,UPDATE `users` SET `last_activity` = 1724893381 WHERE (`id` = 9),1,50
+/plans/view,/plans/view/3729,COMMIT,1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 2)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `runs`
+WHERE (`id` = 3729) AND (`is_plan` = 1)",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `statuses`
+ORDER BY `display_order` ASC",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `users`
+WHERE (`id` = 106)",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `user_exports`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 3) AND (`format` = 'csv')",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",1,44
+/plans/view,/plans/view/3729,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,44
+/plans/view,/plans/view/3729,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,44
+/plans/view,/plans/view/3729,"SELECT COUNT(*) AS `row_count`
+FROM `runs`
+WHERE (`plan_id` = 3729)",2,44
+/plans/view,/plans/view/3729,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,44
+/plans/view,/plans/view/3729,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",1,44
+/plans/view,/plans/view/3729,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,44
+/plans/view,/plans/view/3729,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,44
+/plans/view,/plans/view/3729,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,44
+/plans/view,/plans/view/3729,"SELECT `projects`.`id`
+FROM `runs`
+JOIN `projects` ON projects.id=runs.project_id
+WHERE (`runs`.`id` = '3729')",1,44
+/plans/view,/plans/view/3729,"SELECT `runs`.*,`runs`.`name` AS `entry_name`
+FROM `runs`
+WHERE (`plan_id` = 3729)
+ORDER BY `entry_index` ASC, `entry_id` ASC, `config` ASC
+LIMIT 0,100",1,44
+/plans/view,/plans/view/3729,SET AUTOCOMMIT = 0,1,44
+/plans/view,/plans/view/3729,SET AUTOCOMMIT = 1,2,44
+/plans/view,/plans/view/3729,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,44
+/plans/view,/plans/view/3729,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,44
+/plans/view,/plans/view/3729,START TRANSACTION,1,44
+/plans/view,/plans/view/3729,UPDATE `banners` SET `force_reset_cookie` = 0,1,44
+/plans/view,/plans/view/3729,"UPDATE `sessions` SET `session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8',`last_activity` = 1724893389,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724881784,\""user_id\"":9,\""csrf\"":\""BV5863rOtU\\/YXVJdAEsb\""}',`user_id` = 9 WHERE (`id` = 61250799)",1,44
+/plans/view,/plans/view/3729,UPDATE `users` SET `last_activity` = 1724893385 WHERE (`id` = 9),1,44
+/projects/ajax_chart,/projects/ajax_chart,"
+		-- projects_most_activities
+		SELECT
+		count(test_changes.id) as total_count,
+			test_changes.created_on as date,
+			test_changes.status_id
+		FROM
+			test_changes
+		JOIN
+			tests
+		ON
+			tests.id = test_changes.test_id
+		JOIN
+			cases
+		ON
+			cases.id = tests.case_id
+		JOIN
+			statuses
+		ON
+			statuses.id = test_changes.status_id
+
+		WHERE
+			test_changes.created_on >= 1702684800
+		AND
+			test_changes.created_on <= 1703116800
+		AND
+			test_changes.project_id IN (15)
+		AND
+			cases.is_deleted = 0
+		AND
+			statuses.is_notapplicable = 0
+
+		GROUP BY
+			test_changes.created_on, test_changes.status_id",1,27
+/projects/ajax_chart,/projects/ajax_chart,"
+	-- statuses_is_not_applicable_get
+	SELECT
+		*
+	FROM
+		statuses
+	WHERE
+		is_notapplicable != 0",1,27
+/projects/ajax_chart,/projects/ajax_chart,COMMIT,1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `statuses`
+WHERE (`is_notapplicable` = 0)
+ORDER BY `display_order` ASC",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT COUNT(*) AS cnt FROM (
+		-- projects_most_activities
+		SELECT
+		count(test_changes.id) as total_count,
+			test_changes.created_on as date,
+			test_changes.status_id
+		FROM
+			test_changes
+		JOIN
+			tests
+		ON
+			tests.id = test_changes.test_id
+		JOIN
+			cases
+		ON
+			cases.id = tests.case_id
+		JOIN
+			statuses
+		ON
+			statuses.id = test_changes.status_id
+
+		WHERE
+			test_changes.created_on >= 1702684800
+		AND
+			test_changes.created_on <= 1703116800
+		AND
+			test_changes.project_id IN (15)
+		AND
+			cases.is_deleted = 0
+		AND
+			statuses.is_notapplicable = 0
+
+		GROUP BY
+			test_changes.created_on, test_changes.status_id) t1",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,27
+/projects/ajax_chart,/projects/ajax_chart,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,27
+/projects/ajax_chart,/projects/ajax_chart,SET AUTOCOMMIT = 0,1,27
+/projects/ajax_chart,/projects/ajax_chart,SET AUTOCOMMIT = 1,2,27
+/projects/ajax_chart,/projects/ajax_chart,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,27
+/projects/ajax_chart,/projects/ajax_chart,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,27
+/projects/ajax_chart,/projects/ajax_chart,START TRANSACTION,1,27
+/projects/ajax_chart,/projects/ajax_chart,UPDATE `banners` SET `force_reset_cookie` = 0,1,27
+/projects/ajax_chart,/projects/ajax_chart,UPDATE `users` SET `last_activity` = 1724893393 WHERE (`id` = 9),1,27
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,COMMIT,1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,SET AUTOCOMMIT = 0,1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,SET AUTOCOMMIT = 1,2,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,START TRANSACTION,1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,UPDATE `banners` SET `force_reset_cookie` = 0,1,21
+/projects/ajax_chart_datetime,/projects/ajax_chart_datetime,UPDATE `users` SET `last_activity` = 1724893393 WHERE (`id` = 9),1,21
+/projects/ajax_render_todos,/projects/ajax_render_todos,"
+	-- runs_with_todos
+	SELECT
+		runs.id,
+		runs.name,
+		COUNT(tests.id) as count
+	FROM
+		runs
+	JOIN
+		tests
+			ON
+		runs.id = tests.run_id
+	WHERE
+		runs.project_id = 15 AND
+		runs.is_completed = 0 AND
+		tests.is_selected = 1 AND
+		tests.assignedto_id = 9 AND
+		tests.status_id != 1
+	GROUP BY
+		runs.id,
+		runs.name,
+		runs.created_on
+	ORDER BY
+		runs.created_on desc",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,COMMIT,1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,SET AUTOCOMMIT = 0,1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,SET AUTOCOMMIT = 1,2,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,START TRANSACTION,1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,UPDATE `banners` SET `force_reset_cookie` = 0,1,25
+/projects/ajax_render_todos,/projects/ajax_render_todos,UPDATE `users` SET `last_activity` = 1724893393 WHERE (`id` = 9),1,25
+/projects/overview,/projects/overview/15,"
+	-- milestones_top
+	SELECT
+		milestones.id,
+		milestones.name,
+		milestones.due_on,
+		milestones.is_completed
+	FROM
+		milestones
+	WHERE
+		milestones.project_id = 15 AND
+		milestones.parent_id IS NULL AND
+		milestones.is_started = 1 AND
+		milestones.is_completed = 0
+	ORDER BY
+		CASE WHEN due_on IS NULL THEN 1 ELSE 0 END ASC,
+		milestones.due_on ASC
+	LIMIT
+		3",1,43
+/projects/overview,/projects/overview/15,"
+	-- runs_top
+	SELECT
+		runs.id,
+		runs.name,
+		runs.created_on,
+		runs.user_id,
+		runs.is_plan,
+		runs.config,
+		runs.blocked_count,
+		runs.passed_count,
+		runs.untested_count,
+		runs.retest_count,
+		runs.failed_count,
+		runs.custom_status1_count,
+		runs.custom_status2_count,
+		runs.custom_status3_count,
+		runs.custom_status4_count,
+		runs.custom_status5_count,
+		runs.custom_status6_count,
+		runs.custom_status7_count
+	FROM
+		runs
+	WHERE
+		runs.project_id IN (15) AND
+		runs.is_completed = 0 AND
+		runs.plan_id IS NULL
+	ORDER BY
+		runs.created_on DESC
+	LIMIT
+		0,3",1,43
+/projects/overview,/projects/overview/15,COMMIT,1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `announcements`
+ORDER BY `id` DESC
+LIMIT 0,1",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `statuses`
+WHERE (`is_notapplicable` = 1)
+ORDER BY `display_order` ASC",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `suites`
+WHERE (`project_id` = 15) AND (`is_copy` = 0)
+ORDER BY `name` ASC",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 255)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 282)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 293)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 71)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,43
+/projects/overview,/projects/overview/15,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,43
+/projects/overview,/projects/overview/15,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,43
+/projects/overview,/projects/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,43
+/projects/overview,/projects/overview/15,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,43
+/projects/overview,/projects/overview/15,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,43
+/projects/overview,/projects/overview/15,"SELECT `project_history`.*,`runs`.`name` AS `run_name`,`runs`.`is_completed` AS `run_is_completed`,`cases`.`title` AS `case_name`,`plans`.`name` AS `plan_name`,`plans`.`is_completed` AS `plan_is_completed`,`milestones`.`name` AS `milestone_name`,`milestones`.`is_completed` AS `milestone_is_completed`,`suites`.`name` AS `suite_name`
+FROM `project_history`
+LEFT JOIN `runs` ON runs.id = project_history.run_id
+LEFT JOIN `cases` ON cases.id = project_history.case_id
+LEFT JOIN `runs` AS `plans` ON plans.id = project_history.plan_id
+LEFT JOIN `suites` ON suites.id = project_history.suite_id
+LEFT JOIN `milestones` ON milestones.id = project_history.milestone_id
+WHERE (`project_history`.`project_id` = 15)
+ORDER BY `project_history`.`created_on` DESC
+LIMIT 0,25",1,43
+/projects/overview,/projects/overview/15,"SELECT `users`.`role_id`,`roles`.*
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9)",1,43
+/projects/overview,/projects/overview/15,SET AUTOCOMMIT = 0,1,43
+/projects/overview,/projects/overview/15,SET AUTOCOMMIT = 1,2,43
+/projects/overview,/projects/overview/15,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,43
+/projects/overview,/projects/overview/15,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,43
+/projects/overview,/projects/overview/15,START TRANSACTION,1,43
+/projects/overview,/projects/overview/15,UPDATE `banners` SET `force_reset_cookie` = 0,1,43
+/projects/overview,/projects/overview/15,"UPDATE `sessions` SET `session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8',`last_activity` = 1724893393,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724881784,\""user_id\"":9,\""csrf\"":\""BV5863rOtU\\/YXVJdAEsb\""}',`user_id` = 9 WHERE (`id` = 61250799)",1,43
+/projects/overview,/projects/overview/15,UPDATE `users` SET `last_activity` = 1724893389 WHERE (`id` = 9),1,43
+/runs/ajax_render_tests,/runs/ajax_render_tests,COMMIT,1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `case_statuses`",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 2)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `milestones`
+WHERE (`id` = 99)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `milestones`
+WHERE (`project_id` = 15)
+ORDER BY `name`",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `runs`
+WHERE (`id` = 4855)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `sections`
+WHERE (`suite_id` = 64)
+ORDER BY `display_order`",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `suites`
+WHERE (`id` = 64)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `users`
+WHERE (`id` = 149)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `users`
+WHERE (`id` = 221)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+WHERE (`run_id` = 4855) AND (`is_selected` = 1)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4855)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT `tests`.`id`,`tests`.`status_id`,`tests`.`is_completed`,`tests`.`case_id`,`tests`.`content_id`,`tests`.`added_dynamic`,`cases`.`section_id`,`cases`.`template_id`,`cases`.`title`,`cases`.`priority_id`,`cases`.`refs`,`cases`.`estimate`,`cases`.`type_id`,`cases`.`display_order`,`tests`.`id` AS `tests_id`,`cases`.`title` AS `cases_title`,`tests`.`assignedto_id` AS `tests_assignedto_id`,`sections`.`name` AS `cases_section_name`
+FROM `tests`
+JOIN `cases` ON tests.content_id = cases.id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`tests`.`run_id` = 4855) AND (`cases`.`is_deleted` = 0) AND (`tests`.`is_selected` = 1)
+ORDER BY `sections`.`display_order`, `cases`.`display_order`
+LIMIT 0,2000",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,"SELECT `test_changes`.*
+FROM `test_changes`
+JOIN `tests` ON test_changes.test_id = tests.id
+JOIN `cases` ON tests.content_id = cases.id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`test_changes`.`run_id` = 4855) AND (`tests`.`is_selected` = 1)
+ORDER BY `sections`.`display_order`, `cases`.`display_order`, `test_changes`.`test_id`, `test_changes`.`id` DESC",1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,SET AUTOCOMMIT = 0,1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,SET AUTOCOMMIT = 1,2,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,START TRANSACTION,1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,UPDATE `banners` SET `force_reset_cookie` = 0,1,41
+/runs/ajax_render_tests,/runs/ajax_render_tests,UPDATE `users` SET `last_activity` = 1724893401 WHERE (`id` = 9),1,41
+/runs/overview,/runs/overview/15,"
+	-- runs_completion_pending
+	SELECT
+		runs.id,
+		runs.name,
+		runs.config,
+		runs.user_id,
+		runs.created_on,
+		runs.assignedto_id,
+		runs.milestone_id,
+		runs.is_plan,
+		runs.is_editable,
+		runs.passed_count,
+		runs.retest_count,
+		runs.failed_count,
+		runs.untested_count,
+		runs.blocked_count,
+		runs.custom_status1_count,
+		runs.custom_status2_count,
+		runs.custom_status3_count,
+		runs.custom_status4_count,
+		runs.custom_status5_count,
+		runs.custom_status6_count,
+		runs.custom_status7_count
+	FROM
+		runs
+	JOIN
+		milestones
+			ON
+		milestones.id = runs.milestone_id
+	WHERE
+		runs.project_id = 15 AND
+		runs.is_completed = 0 AND
+		runs.plan_id IS NULL AND
+		milestones.is_completed = 1
+	LIMIT 0,100",1,76
+/runs/overview,/runs/overview/15,"
+	-- runs_completion_pending
+	SELECT
+		runs.id,
+		runs.name,
+		runs.config,
+		runs.user_id,
+		runs.created_on,
+		runs.assignedto_id,
+		runs.milestone_id,
+		runs.is_plan,
+		runs.is_editable,
+		runs.passed_count,
+		runs.retest_count,
+		runs.failed_count,
+		runs.untested_count,
+		runs.blocked_count,
+		runs.custom_status1_count,
+		runs.custom_status2_count,
+		runs.custom_status3_count,
+		runs.custom_status4_count,
+		runs.custom_status5_count,
+		runs.custom_status6_count,
+		runs.custom_status7_count
+	FROM
+		runs
+	JOIN
+		milestones
+			ON
+		milestones.id = runs.milestone_id
+	WHERE
+		runs.project_id IN (15) AND
+		runs.is_completed = 0 AND
+		runs.plan_id IS NULL AND
+		milestones.is_completed = 1",1,76
+/runs/overview,/runs/overview/15,COMMIT,1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,76
+/runs/overview,/runs/overview/15,"
+	-- runs_upcoming
+	SELECT
+		runs.id,
+		runs.name,
+		runs.config,
+		runs.user_id,
+		runs.created_on,
+		runs.assignedto_id,
+		runs.milestone_id,
+		runs.is_plan,
+		runs.is_editable,
+		runs.passed_count,
+		runs.retest_count,
+		runs.failed_count,
+		runs.untested_count,
+		runs.blocked_count,
+		runs.custom_status1_count,
+		runs.custom_status2_count,
+		runs.custom_status3_count,
+		runs.custom_status4_count,
+		runs.custom_status5_count,
+		runs.custom_status6_count,
+		runs.custom_status7_count,
+		runs.is_completed,
+		milestones.start_on,
+		milestones.due_on
+	FROM
+		runs
+	JOIN
+		milestones
+			ON
+		milestones.id = runs.milestone_id
+	WHERE
+		runs.project_id = 15 AND
+		runs.is_completed = 0 AND
+		runs.plan_id IS NULL AND
+		milestones.is_started = 0 AND
+		milestones.is_completed = 0
+	ORDER BY
+		milestones.start_on,
+		runs.name",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `statuses`
+ORDER BY `display_order` ASC",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `suites`
+WHERE (`project_id` = 15) AND (`is_copy` = 0)
+ORDER BY `name` ASC",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 106)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 118)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 128)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 133)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 137)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 146)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 166)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 255)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 293)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 42)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 50)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 71)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,76
+/runs/overview,/runs/overview/15,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,76
+/runs/overview,/runs/overview/15,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `runs`
+WHERE (`project_id` = 15) AND (plan_id IS NULL) AND (`is_completed` = 1)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 2991) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 3077) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 4682) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 4724) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 4726) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 4738) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 4854) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 4855) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 4939) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 4954) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 6309) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+JOIN `cases` ON cases.id = tests.content_id
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`run_id` = 6310) AND (`is_selected` = 1) AND (`tests`.`status_id` = 3) AND (case_id IS NOT NULL) AND (`cases`.`is_deleted` = 0)",1,76
+/runs/overview,/runs/overview/15,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 2991)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 3077)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4682)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4724)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4726)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4738)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4854)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4855)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4939)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4954)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 6309)",1,76
+/runs/overview,/runs/overview/15,"SELECT filters
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 6310)",1,76
+/runs/overview,/runs/overview/15,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,76
+/runs/overview,/runs/overview/15,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,76
+/runs/overview,/runs/overview/15,"SELECT `runs`.*
+FROM `runs`
+WHERE (`project_id` = 15) AND (plan_id IS NULL) AND (`is_completed` = 1)
+ORDER BY `completed_on` DESC
+LIMIT 0,100",1,76
+/runs/overview,/runs/overview/15,"SELECT `runs`.`id`,`runs`.`name`,`runs`.`config`,`runs`.`user_id`,`runs`.`created_on`,`runs`.`assignedto_id`,`runs`.`milestone_id`,`runs`.`entries`,`runs`.`is_plan`,`runs`.`is_editable`,`runs`.`passed_count`,`runs`.`retest_count`,`runs`.`failed_count`,`runs`.`untested_count`,`runs`.`blocked_count`,`runs`.`custom_status1_count`,`runs`.`custom_status2_count`,`runs`.`custom_status3_count`,`runs`.`custom_status4_count`,`runs`.`custom_status5_count`,`runs`.`custom_status6_count`,`runs`.`custom_status7_count`
+FROM `runs`
+WHERE (`runs`.`project_id` IN (15)) AND (`runs`.`is_completed` = 0) AND (runs.plan_id IS NULL) AND ((runs.milestone_id IS NULL)
+                OR
+            (EXISTS
+                (SELECT
+                    *
+                FROM
+                    milestones
+                WHERE
+                    id = runs.milestone_id AND
+                    is_started = 1 AND
+                    is_completed = 0
+                )
+            ))
+ORDER BY `runs`.`id` DESC",1,76
+/runs/overview,/runs/overview/15,SET AUTOCOMMIT = 0,1,76
+/runs/overview,/runs/overview/15,SET AUTOCOMMIT = 1,2,76
+/runs/overview,/runs/overview/15,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,76
+/runs/overview,/runs/overview/15,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,76
+/runs/overview,/runs/overview/15,START TRANSACTION,1,76
+/runs/overview,/runs/overview/15,UPDATE `banners` SET `force_reset_cookie` = 0,1,76
+/runs/overview,/runs/overview/15,"UPDATE `sessions` SET `session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8',`last_activity` = 1724893397,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724881784,\""user_id\"":9,\""csrf\"":\""BV5863rOtU\\/YXVJdAEsb\""}',`user_id` = 9 WHERE (`id` = 61250799)",1,76
+/runs/overview,/runs/overview/15,UPDATE `users` SET `last_activity` = 1724893393 WHERE (`id` = 9),1,76
+/runs/overview,/runs/overview/15,"SELECT `runs`.`id`,`runs`.`name`,`runs`.`config`,`runs`.`user_id`,`runs`.`created_on`,`runs`.`assignedto_id`,`runs`.`milestone_id`,`runs`.`entries`,`runs`.`is_plan`,`runs`.`is_editable`,`runs`.`passed_count`,`runs`.`retest_count`,`runs`.`failed_count`,`runs`.`untested_count`,`runs`.`blocked_count`,`runs`.`custom_status1_count`,`runs`.`custom_status2_count`,`runs`.`custom_status3_count`,`runs`.`custom_status4_count`,`runs`.`custom_status5_count`,`runs`.`custom_status6_count`,`runs`.`custom_status7_count`
+FROM `runs`
+WHERE (`runs`.`project_id` IN (15)) AND (`runs`.`is_completed` = 0) AND (runs.plan_id IS NULL) AND ((runs.milestone_id IS NULL)
+                OR
+            (EXISTS
+                (SELECT
+                    *
+                FROM
+                    milestones
+                WHERE
+                    id = runs.milestone_id AND
+                    is_started = 1 AND
+                    is_completed = 0
+                )
+            ))
+ORDER BY `runs`.`id` DESC
+LIMIT 0,100",1,76
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,COMMIT,1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 2)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `milestones`
+WHERE (`id` = 99)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `milestones`
+WHERE (`project_id` = 15)
+ORDER BY `name`",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `project_groups`
+WHERE (`project_id` = 15)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `runs`
+WHERE (`id` = 4855)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `run_dynamic_filters`
+WHERE (`run_id` = 4855)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `sections`
+WHERE (`suite_id` = 64)
+ORDER BY `display_order`",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `statuses`
+ORDER BY `display_order` ASC",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `subscriptions`
+WHERE (`run_id` = 4855) AND (`test_id` = 0) AND (`user_id` = 9)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `suites`
+WHERE (`id` = 64)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `users`
+WHERE (`id` = 133)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `users`
+WHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,312,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))
+ORDER BY `name` ASC",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `user_columns`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 2)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `user_columns`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 7)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `user_exports`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 2) AND (`format` = 'csv')",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `user_filters`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 2)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT COUNT(*) AS `row_count`
+FROM `tests`
+WHERE (`run_id` = 4855) AND (`is_selected` = 1)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT `group_id`,`user_id`
+FROM `group_users`
+WHERE (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348)) AND (`group_id` IN (3,9))",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT `id`,`role_id`
+FROM `users`
+WHERE (`is_active` = 1)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT `projects`.`id`
+FROM `runs`
+JOIN `projects` ON projects.id=runs.project_id
+WHERE (`runs`.`id` = '4855')",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"SELECT `variable_name`
+FROM `variables`
+WHERE (`project_id` = 15)
+ORDER BY `id`",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,SET AUTOCOMMIT = 0,1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,SET AUTOCOMMIT = 1,2,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,START TRANSACTION,1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,UPDATE `banners` SET `force_reset_cookie` = 0,1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,"UPDATE `sessions` SET `session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8',`last_activity` = 1724893401,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724881784,\""user_id\"":9,\""csrf\"":\""BV5863rOtU\\/YXVJdAEsb\""}',`user_id` = 9 WHERE (`id` = 61250799)",1,57
+/runs/view,/runs/view/4855&group_by=cases:section_id&group_order=asc,UPDATE `users` SET `last_activity` = 1724893397 WHERE (`id` = 9),1,57
+/suites/ajax_render_cases,/suites/ajax_render_cases,COMMIT,1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `case_statuses`",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 2)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `milestones`
+WHERE (`project_id` = 15)
+ORDER BY `name`",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `sections`
+WHERE (`suite_id` = 64)
+ORDER BY `display_order`",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `suites`
+WHERE (`id` = 64)",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT `cases`.*,`cases`.`id` AS `cases_id`,`cases`.`title` AS `cases_title`,`sections`.`name` AS `cases_section_name`
+FROM `cases`
+JOIN `sections` ON cases.section_id = sections.id
+WHERE (`cases`.`is_deleted` = 0) AND (`sections`.`suite_id` = 64) AND (`cases`.`section_id` IN (767,145490,145491))
+ORDER BY `sections`.`display_order`, `cases`.`display_order`
+LIMIT 0,2000",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,SET AUTOCOMMIT = 0,1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,SET AUTOCOMMIT = 1,3,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',2,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,START TRANSACTION,1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,UPDATE `banners` SET `force_reset_cookie` = 0,1,35
+/suites/ajax_render_cases,/suites/ajax_render_cases,UPDATE `users` SET `last_activity` = 1724893406 WHERE (`id` = 9),1,35
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"
+	-- forecasts_estimate
+	SELECT
+		 s.id,
+		 COUNT(*) AS case_count,
+		 COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,
+		 COUNT(c.estimate) AS estimate_count,
+		 COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,
+		 COUNT(estimate_forecast) AS forecast_count
+	FROM
+ 		suites AS s
+	LEFT JOIN
+ 		cases  AS c
+  	ON
+ 		c.suite_id = s.id
+	WHERE s.id = 64",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"
+	-- suites_header_no_deleted_cases
+	SELECT
+		id,
+		id AS suite_id,
+		name,
+		name AS suite_name,
+		(
+			SELECT
+				COUNT(*)
+			FROM
+					sections
+			WHERE
+				suite_id = suites.id
+			) AS section_count,
+		(
+			SELECT
+				COUNT(*)
+			FROM
+					cases
+			WHERE
+				suite_id = suites.id
+			AND
+				is_deleted = 0
+		) AS case_count
+	FROM
+		suites
+	WHERE
+		id = 64",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,COMMIT,1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 2)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `milestones`
+WHERE (`project_id` = 15)
+ORDER BY `name`",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `projects`
+ORDER BY `name` ASC",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `project_access`
+WHERE (`project_id` IN (5,1,134,61,9,65,74,6,8,14,168,185,164,186,111,193,92,183,202,205,209,3,15,64,83,7,62,67,108)) AND (`user_id` = 9)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `project_groups`
+WHERE (`project_id` = 15)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `sections`
+WHERE (`suite_id` = 64)
+ORDER BY `display_order`",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `suites`
+WHERE (`id` = 64)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `templates`
+ORDER BY `name`",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `users`
+WHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))
+ORDER BY `name` ASC",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_columns`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 1)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_columns`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 5)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_columns`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 6)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_exports`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 1) AND (`format` = 'csv')",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_filters`
+WHERE (`user_id` = 9) AND (`project_id` = 15) AND (`area_id` = 1)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `id`,`role_id`
+FROM `users`
+WHERE (`is_active` = 1)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `project_id`
+FROM `suites`
+WHERE (`id` = '64')",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `suites`.*,`projects`.`name` AS `project_name`,`projects`.`id` AS `project_id`
+FROM `suites`
+JOIN `projects` ON projects.id = suites.project_id
+WHERE (`suites`.`project_id` IN (5,134,9,65,74,6,8,14,168,185,164,186,193,92,183,202,205,209,3,15,64,83,7,62,67,108)) AND (`suites`.`is_copy` = 0)
+ORDER BY `projects`.`name` ASC, `suites`.`name` ASC",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `group_id`,`user_id`
+FROM `group_users`
+WHERE (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348)) AND (`group_id` IN (3,9))",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `template_id`,`project_id`
+FROM `template_projects`
+WHERE (`template_id` IN (12,4,11,2,8,6,5,10,9,1,3,7))",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"SELECT `variable_name`
+FROM `variables`
+WHERE (`project_id` = 15)
+ORDER BY `id`",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,SET AUTOCOMMIT = 0,1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,SET AUTOCOMMIT = 1,2,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,START TRANSACTION,1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,UPDATE `banners` SET `force_reset_cookie` = 0,1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,"UPDATE `sessions` SET `session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8',`last_activity` = 1724893406,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724881784,\""user_id\"":9,\""csrf\"":\""BV5863rOtU\\/YXVJdAEsb\""}',`user_id` = 9 WHERE (`id` = 61250799)",1,58
+/suites/view,/suites/view/64&group_by=cases:section_id&group_order=asc&display_deleted_cases=0,UPDATE `users` SET `last_activity` = 1724893401 WHERE (`id` = 9),1,58
+/tests/view,/tests/view/5179715,COMMIT,1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `cases`
+WHERE (`id` = 1401773)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `cases`
+WHERE (`id` = 1710635)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `case_assocs`
+WHERE (`case_id` = 1401773)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `case_assocs`
+WHERE (`case_id` = 1710635)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `case_statuses`",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `case_types`
+ORDER BY `name`",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `datasets`
+WHERE (`project_id` = 15) AND (`title` = 'Default')
+LIMIT 0,1",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 1)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `fields`
+WHERE (`entity_id` = 2)
+ORDER BY `is_system` DESC, `location_id` ASC, `display_order`",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `preferences`
+WHERE (`user_id` = 9)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `priorities`
+ORDER BY `priority` DESC",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `projects`
+WHERE (`id` = 15)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` = 9)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `project_access`
+WHERE (`project_id` = 15) AND (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `project_groups`
+WHERE (`project_id` = 15)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `roles`
+ORDER BY `display_order` ASC, `name` ASC",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `runs`
+WHERE (`id` = 224) AND (`is_plan` = 1)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `runs`
+WHERE (`id` = 225)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `sections`
+WHERE (`suite_id` = 3292)
+ORDER BY `display_order`",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '9afbe200-9eda-4366-a3e9-ee27a34ec801')",2,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `sessions`
+WHERE (`user_id` = 9) AND (`is_invalidated` = 0)
+ORDER BY `last_activity` DESC",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `statuses`
+ORDER BY `display_order`",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `subscriptions`
+WHERE (`run_id` = 225) AND (`test_id` = 0) AND (`user_id` = 9)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `subscriptions`
+WHERE (`run_id` = 225) AND (`test_id` = 5179715) AND (`user_id` = 9)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `suites`
+WHERE (`id` = 64)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `tests`
+WHERE (`id` = 5179715)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `test_changes`
+WHERE (`test_id` = 5179715)
+ORDER BY `id` DESC
+LIMIT 0,100",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `test_timers`
+WHERE (`test_id` = 5179715) AND (`user_id` = 9)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `uiscripts`
+WHERE (`is_active` = 1)
+ORDER BY `name` ASC",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `users`
+WHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,312,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))
+ORDER BY `name` ASC",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `users`
+WHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))
+ORDER BY `name` ASC",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",1,62
+/tests/view,/tests/view/5179715,"SELECT *
+FROM `user_settings`
+WHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",1,62
+/tests/view,/tests/view/5179715,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,62
+/tests/view,/tests/view/5179715,"SELECT COUNT(*) AS `row_count`
+FROM `test_changes`
+WHERE (`test_id` IN (5179715))",1,62
+/tests/view,/tests/view/5179715,"SELECT COUNT(*) AS `row_count`
+FROM `users`
+WHERE (`is_active` = 1)",1,62
+/tests/view,/tests/view/5179715,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",1,62
+/tests/view,/tests/view/5179715,"SELECT `field_id`,`template_id`
+FROM `field_templates`
+WHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",1,62
+/tests/view,/tests/view/5179715,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,62
+/tests/view,/tests/view/5179715,"SELECT `group_id`,`user_id`
+FROM `group_users`
+WHERE (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348)) AND (`group_id` IN (3,9))",1,62
+/tests/view,/tests/view/5179715,"SELECT `id`,`role_id`
+FROM `users`
+WHERE (`is_active` = 1)",1,62
+/tests/view,/tests/view/5179715,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,62
+/tests/view,/tests/view/5179715,"SELECT `projects`.`id`
+FROM `cases`
+JOIN `sections` ON sections.id=cases.section_id
+JOIN `suites` ON suites.id=sections.suite_id
+JOIN `projects` ON projects.id=suites.project_id
+WHERE (`cases`.`id` = '1710635')",1,62
+/tests/view,/tests/view/5179715,"SELECT `users`.`id`,`users`.`name`
+FROM `users`
+JOIN `test_timers` ON test_timers.user_id = users.id
+WHERE (`test_timers`.`test_id` = 5179715) AND (`test_timers`.`user_id` != 9)",1,62
+/tests/view,/tests/view/5179715,SET AUTOCOMMIT = 0,1,62
+/tests/view,/tests/view/5179715,SET AUTOCOMMIT = 1,2,62
+/tests/view,/tests/view/5179715,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,62
+/tests/view,/tests/view/5179715,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,62
+/tests/view,/tests/view/5179715,START TRANSACTION,1,62
+/tests/view,/tests/view/5179715,UPDATE `banners` SET `force_reset_cookie` = 0,1,62
+/tests/view,/tests/view/5179715,"UPDATE `sessions` SET `session_id` = '9afbe200-9eda-4366-a3e9-ee27a34ec801',`last_activity` = 1724893411,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',`user_data` = '{\""last_login\"":1724887390,\""user_id\"":9,\""csrf\"":\""TpoedGnQ9Iex0kJfKqtC\""}',`user_id` = 9 WHERE (`id` = 61250801)",1,62
+/tests/view,/tests/view/5179715,UPDATE `users` SET `last_activity` = 1724888681 WHERE (`id` = 9),1,62
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,COMMIT,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '9afbe200-9eda-4366-a3e9-ee27a34ec801')",2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET AUTOCOMMIT = 0,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET AUTOCOMMIT = 1,2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,START TRANSACTION,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,UPDATE `banners` SET `force_reset_cookie` = 0,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,UPDATE `users` SET `last_activity` = 1724893411 WHERE (`id` = 9),1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,COMMIT,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET AUTOCOMMIT = 0,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET AUTOCOMMIT = 1,2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,START TRANSACTION,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,UPDATE `banners` SET `force_reset_cookie` = 0,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,UPDATE `users` SET `last_activity` = 1724893406 WHERE (`id` = 9),1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,COMMIT,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET AUTOCOMMIT = 0,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET AUTOCOMMIT = 1,2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,START TRANSACTION,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,UPDATE `banners` SET `force_reset_cookie` = 0,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,UPDATE `users` SET `last_activity` = 1724893377 WHERE (`id` = 9),1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,COMMIT,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `banners`
+LIMIT 0,1",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `banners`
+WHERE (`start_date` <= 1724889600) AND (`end_date` >= 1724975999) AND (`active` = 1)
+ORDER BY `start_date`",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `sessions`
+WHERE (`session_id` = '645c2fb1-23bd-4ad5-8a8d-de38761659f8')",2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `settings`
+ORDER BY `name` ASC",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `users`
+LEFT JOIN `roles` ON roles.id = users.role_id
+WHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `users`
+WHERE (`id` = 9)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT *
+FROM `user_logins`
+WHERE (`name` = 'vasyl.zhdankin@agileengine.com')",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT 1
+FROM `user_logins`
+WHERE (`current_auth` IS NOT NULL)
+LIMIT 0,1",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT `group_id`
+FROM `group_users`
+WHERE (`user_id` = 9)",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,"SELECT `is_sso_enabled`
+FROM `users`
+WHERE (`email` = 'vasyl.zhdankin@agileengine.com')",1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET AUTOCOMMIT = 0,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET AUTOCOMMIT = 1,2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET NAMES 'utf8' COLLATE 'utf8_unicode_ci',1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,SET TRANSACTION ISOLATION LEVEL READ COMMITTED,2,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,START TRANSACTION,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,UPDATE `banners` SET `force_reset_cookie` = 0,1,21
+/updater/ajax_get_attachments_migration_status,/updater/ajax_get_attachments_migration_status,UPDATE `users` SET `last_activity` = 1724893401 WHERE (`id` = 9),1,21
