@@ -1,162 +1,192 @@
 [
     {
         "sql": "SET AUTOCOMMIT = 1",
-        "count": 2
+        "count": 2,
+        "timeMs": 0.00032901763916015625
     },
     {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '66a4a081-5211-42c9-bb62-df8c5fb21352')",
-        "count": 2
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = 'f0eb17f0-7c58-4b80-a939-e7bda41052d5')",
+        "count": 2,
+        "timeMs": 0.0003831386566162109375
     },
     {
         "sql": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
-        "count": 2
+        "count": 2,
+        "timeMs": 0.0004978179931640625
     },
     {
         "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00045108795166015625
     },
     {
         "sql": "SELECT *\nFROM `settings`\nORDER BY `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.003582000732421875
     },
     {
         "sql": "SET AUTOCOMMIT = 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004560947418212890625
     },
     {
         "sql": "START TRANSACTION",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0001699924468994140625
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1724682439 WHERE (`id` = 9)",
-        "count": 1
+        "sql": "UPDATE `users` SET `last_activity` = 1725470177 WHERE (`id` = 9)",
+        "count": 1,
+        "timeMs": 0.0006620883941650390625
     },
     {
         "sql": "COMMIT",
-        "count": 1
-    },
-    {
-        "sql": "UPDATE `sessions` SET `session_id` = '66a4a081-5211-42c9-bb62-df8c5fb21352',`last_activity` = 1724682443,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1724672770,\\\"user_id\\\":9,\\\"csrf\\\":\\\"2adpE0.97M4YQhsWmuXS\\\"}',`user_id` = 9 WHERE (`id` = 61250793)",
-        "count": 1
-    },
-    {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 9) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003259181976318359375
     },
     {
         "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004479885101318359375
     },
     {
         "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0007798671722412109375
     },
     {
         "sql": "SELECT *\nFROM `banners`\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00115203857421875
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724630400) AND (`end_date` >= 1724716799) AND (`active` = 1)\nORDER BY `start_date`",
-        "count": 1
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1725408000) AND (`end_date` >= 1725494399) AND (`active` = 1)\nORDER BY `start_date`",
+        "count": 1,
+        "timeMs": 0.0004131793975830078125
     },
     {
         "sql": "UPDATE `banners` SET `force_reset_cookie` = 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003321170806884765625
     },
     {
         "sql": "SELECT `is_sso_enabled`\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0005168914794921875
     },
     {
         "sql": "SELECT 1\nFROM `user_logins`\nWHERE (`current_auth` IS NOT NULL)\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004460811614990234375
     },
     {
         "sql": "SELECT *\nFROM `user_logins`\nWHERE (`name` = 'vasyl.zhdankin@agileengine.com')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000773906707763671875
     },
     {
         "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000463962554931640625
     },
     {
         "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 4855)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004870891571044921875
     },
     {
         "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 15)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004041194915771484375
     },
     {
         "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 15) AND (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004079341888427734375
     },
     {
         "sql": "SELECT *\nFROM `roles`\nORDER BY `display_order` ASC, `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000340938568115234375
     },
     {
         "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 1)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0005848407745361328125
     },
     {
         "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000453948974609375
     },
     {
         "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 2)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004851818084716796875
     },
     {
         "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002839565277099609375
     },
     {
         "sql": "SELECT *\nFROM `suites`\nWHERE (`id` = 64)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00045013427734375
     },
     {
         "sql": "SELECT filters\nFROM `run_dynamic_filters`\nWHERE (`run_id` = 4855)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000238895416259765625
     },
     {
         "sql": "SELECT `tests`.`id`,`tests`.`status_id`,`tests`.`is_completed`,`tests`.`case_id`,`tests`.`content_id`,`tests`.`added_dynamic`,`cases`.`section_id`,`cases`.`template_id`,`cases`.`title`,`cases`.`priority_id`,`cases`.`refs`,`cases`.`estimate`,`cases`.`type_id`,`cases`.`display_order`,`tests`.`id` AS `tests_id`,`cases`.`title` AS `cases_title`,`tests`.`assignedto_id` AS `tests_assignedto_id`,`sections`.`name` AS `cases_section_name`\nFROM `tests`\nJOIN `cases` ON tests.content_id = cases.id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`tests`.`run_id` = 4855) AND (`cases`.`is_deleted` = 0) AND (`tests`.`is_selected` = 1)\nORDER BY `sections`.`display_order`, `cases`.`display_order`\nLIMIT 0,2000",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.001598834991455078125
     },
     {
         "sql": "SELECT COUNT(*) AS `row_count`\nFROM `tests`\nWHERE (`run_id` = 4855) AND (`is_selected` = 1)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000338077545166015625
     },
     {
         "sql": "SELECT *\nFROM `sections`\nWHERE (`suite_id` = 64)\nORDER BY `display_order`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0013477802276611328125
     },
     {
         "sql": "SELECT *\nFROM `milestones`\nWHERE (`id` = 99)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000399112701416015625
     },
     {
         "sql": "SELECT *\nFROM `milestones`\nWHERE (`project_id` = 15)\nORDER BY `name`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00034999847412109375
     },
     {
         "sql": "SELECT `test_changes`.*\nFROM `test_changes`\nJOIN `tests` ON test_changes.test_id = tests.id\nJOIN `cases` ON tests.content_id = cases.id\nJOIN `sections` ON cases.section_id = sections.id\nWHERE (`test_changes`.`run_id` = 4855) AND (`tests`.`is_selected` = 1)\nORDER BY `sections`.`display_order`, `cases`.`display_order`, `test_changes`.`test_id`, `test_changes`.`id` DESC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0245549678802490234375
     },
     {
         "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004789829254150390625
     },
     {
         "sql": "SELECT *\nFROM `case_statuses`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000370025634765625
     },
     {
         "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 149)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003969669342041015625
     },
     {
         "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 221)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000464916229248046875
     }
 ]

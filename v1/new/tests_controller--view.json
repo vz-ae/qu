@@ -1,238 +1,297 @@
 [
     {
         "sql": "SET AUTOCOMMIT = 1",
-        "count": 2
+        "count": 2,
+        "timeMs": 0.0001277923583984375
     },
     {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '50582518-b2fa-42be-b4f9-d1f41acdb560')",
-        "count": 2
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '66887c15-2904-459c-8159-ab8399b1caf8')",
+        "count": 2,
+        "timeMs": 0.000186920166015625
     },
     {
         "sql": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
-        "count": 2
+        "count": 2,
+        "timeMs": 0.0001280307769775390625
     },
     {
         "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000196933746337890625
     },
     {
         "sql": "SELECT *\nFROM `settings`\nORDER BY `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004560947418212890625
     },
     {
         "sql": "SET AUTOCOMMIT = 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000135898590087890625
     },
     {
         "sql": "START TRANSACTION",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000174999237060546875
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1724682385 WHERE (`id` = 9)",
-        "count": 1
+        "sql": "UPDATE `users` SET `last_activity` = 1725470196 WHERE (`id` = 9)",
+        "count": 1,
+        "timeMs": 0.000370025634765625
     },
     {
         "sql": "COMMIT",
-        "count": 1
-    },
-    {
-        "sql": "UPDATE `sessions` SET `session_id` = '50582518-b2fa-42be-b4f9-d1f41acdb560',`last_activity` = 1724682450,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1724682381,\\\"user_id\\\":9,\\\"csrf\\\":\\\"8OTVRKNMeE9kFy4U8rkW\\\"}',`user_id` = 9 WHERE (`id` = 61250795)",
-        "count": 1
-    },
-    {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 9) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000999927520751953125
     },
     {
         "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003821849822998046875
     },
     {
         "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002529621124267578125
     },
     {
         "sql": "SELECT *\nFROM `banners`\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002758502960205078125
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724630400) AND (`end_date` >= 1724716799) AND (`active` = 1)\nORDER BY `start_date`",
-        "count": 1
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1725408000) AND (`end_date` >= 1725494399) AND (`active` = 1)\nORDER BY `start_date`",
+        "count": 1,
+        "timeMs": 0.0002210140228271484375
     },
     {
         "sql": "UPDATE `banners` SET `force_reset_cookie` = 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000172138214111328125
     },
     {
         "sql": "SELECT `is_sso_enabled`\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0001962184906005859375
     },
     {
         "sql": "SELECT 1\nFROM `user_logins`\nWHERE (`current_auth` IS NOT NULL)\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0001718997955322265625
     },
     {
         "sql": "SELECT *\nFROM `user_logins`\nWHERE (`name` = 'vasyl.zhdankin@agileengine.com')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0001809597015380859375
     },
     {
         "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00024890899658203125
+    },
+    {
+        "sql": "UPDATE `sessions` SET `session_id` = '66887c15-2904-459c-8159-ab8399b1caf8',`last_activity` = 1725470196,`ip_address` = '192.168.65.1',`user_agent` = 'Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/128.0.0.0 Safari\/537.36',`user_data` = '{\\\"last_login\\\":1725470196,\\\"user_id\\\":9,\\\"csrf\\\":\\\"Q6T.2Q4TQ9z7P3\\\\\/3YRK5\\\"}',`user_id` = 9 WHERE (`id` = 61250881)",
+        "count": 1,
+        "timeMs": 0.00102996826171875
+    },
+    {
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`user_id` = 9) AND (`is_invalidated` = 0)\nORDER BY `last_activity` DESC",
+        "count": 1,
+        "timeMs": 0.0003030300140380859375
     },
     {
         "sql": "SELECT *\nFROM `tests`\nWHERE (`id` = 5179715)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00144290924072265625
     },
     {
         "sql": "SELECT *\nFROM `cases`\nWHERE (`id` = 1710635)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0020740032196044921875
     },
     {
         "sql": "SELECT *\nFROM `case_assocs`\nWHERE (`case_id` = 1710635)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0008370876312255859375
     },
     {
         "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 225)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002481937408447265625
     },
     {
         "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 15)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002079010009765625
     },
     {
         "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 15) AND (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00022792816162109375
     },
     {
         "sql": "SELECT *\nFROM `roles`\nORDER BY `display_order` ASC, `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002582073211669921875
     },
     {
         "sql": "SELECT *\nFROM `datasets`\nWHERE (`project_id` = 15) AND (`title` = 'Default')\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.003241062164306640625
     },
     {
         "sql": "SELECT *\nFROM `test_timers`\nWHERE (`test_id` = 5179715) AND (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0037629604339599609375
     },
     {
         "sql": "SELECT COUNT(*) AS `row_count`\nFROM `test_changes`\nWHERE (`test_id` IN (5179715))",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.003922939300537109375
     },
     {
         "sql": "SELECT *\nFROM `test_changes`\nWHERE (`test_id` = 5179715)\nORDER BY `id` DESC\nLIMIT 0,100",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000380039215087890625
     },
     {
         "sql": "SELECT *\nFROM `cases`\nWHERE (`id` = 1401773)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003540515899658203125
     },
     {
         "sql": "SELECT *\nFROM `case_assocs`\nWHERE (`case_id` = 1401773)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000274181365966796875
     },
     {
         "sql": "SELECT `projects`.`id`\nFROM `cases`\nJOIN `sections` ON sections.id=cases.section_id\nJOIN `suites` ON suites.id=sections.suite_id\nJOIN `projects` ON projects.id=suites.project_id\nWHERE (`cases`.`id` = '1710635')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0011389255523681640625
     },
     {
         "sql": "SELECT *\nFROM `runs`\nWHERE (`id` = 224) AND (`is_plan` = 1)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000381946563720703125
     },
     {
         "sql": "SELECT `users`.`id`,`users`.`name`\nFROM `users`\nJOIN `test_timers` ON test_timers.user_id = users.id\nWHERE (`test_timers`.`test_id` = 5179715) AND (`test_timers`.`user_id` != 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0005810260772705078125
     },
     {
         "sql": "SELECT *\nFROM `subscriptions`\nWHERE (`run_id` = 225) AND (`test_id` = 0) AND (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002620220184326171875
     },
     {
         "sql": "SELECT *\nFROM `subscriptions`\nWHERE (`run_id` = 225) AND (`test_id` = 5179715) AND (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000281810760498046875
     },
     {
         "sql": "SELECT `id`,`role_id`\nFROM `users`\nWHERE (`is_active` = 1)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004231929779052734375
     },
     {
         "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 15) AND (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004608631134033203125
     },
     {
         "sql": "SELECT *\nFROM `project_groups`\nWHERE (`project_id` = 15)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003411769866943359375
     },
     {
         "sql": "SELECT `group_id`,`user_id`\nFROM `group_users`\nWHERE (`user_id` IN (5,9,10,19,38,44,50,71,79,80,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,266,267,268,269,270,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348)) AND (`group_id` IN (3,9))",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00055217742919921875
     },
     {
         "sql": "SELECT *\nFROM `sections`\nWHERE (`suite_id` = 3292)\nORDER BY `display_order`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0018789768218994140625
     },
     {
         "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003058910369873046875
     },
     {
         "sql": "SELECT *\nFROM `suites`\nWHERE (`id` = 64)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002930164337158203125
     },
     {
         "sql": "SELECT *\nFROM `users`\nWHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,164,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,312,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))\nORDER BY `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0010259151458740234375
     },
     {
         "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 1)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000421047210693359375
     },
     {
         "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000319957733154296875
     },
     {
         "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 2)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000523090362548828125
     },
     {
         "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002830028533935546875
     },
     {
         "sql": "SELECT *\nFROM `case_statuses`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003211498260498046875
     },
     {
         "sql": "SELECT *\nFROM `users`\nWHERE (`id` IN (5,9,10,19,44,50,71,79,98,100,101,103,106,107,116,118,128,129,144,146,150,152,153,162,165,167,169,178,180,182,183,184,190,191,192,198,200,201,203,204,207,208,209,210,211,212,213,214,215,216,218,219,220,226,227,229,230,232,233,234,235,237,240,241,242,243,244,245,251,252,253,254,255,256,257,259,260,262,263,264,265,269,276,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,295,296,298,299,300,301,305,307,314,316,317,319,320,321,322,323,324,327,331,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348))\nORDER BY `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000946044921875
     },
     {
         "sql": "SELECT *\nFROM `preferences`\nWHERE (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000626087188720703125
     },
     {
         "sql": "SELECT *\nFROM `uiscripts`\nWHERE (`is_active` = 1)\nORDER BY `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00026988983154296875
     },
     {
         "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 9) AND (`name` = 'tr_enterprise_banner_display')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000247955322265625
     },
     {
         "sql": "SELECT *\nFROM `users`\nLEFT JOIN `roles` ON roles.id = users.role_id\nWHERE (`users`.`id` = 9) AND (`roles`.`is_project_admin` = 1)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00034999847412109375
     },
     {
         "sql": "SELECT *\nFROM `user_settings`\nWHERE (`user_id` = 9) AND (`name` = 'entity_attachment_delete_dont_show_confirm')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000320911407470703125
     },
     {
         "sql": "SELECT *\nFROM `case_types`\nORDER BY `name`",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000296115875244140625
     },
     {
         "sql": "SELECT *\nFROM `priorities`\nORDER BY `priority` DESC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00020313262939453125
     }
 ]

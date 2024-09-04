@@ -1,90 +1,112 @@
 [
     {
         "sql": "SET AUTOCOMMIT = 1",
-        "count": 2
+        "count": 2,
+        "timeMs": 0.0002357959747314453125
     },
     {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '66a4a081-5211-42c9-bb62-df8c5fb21352')",
-        "count": 2
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = 'f0eb17f0-7c58-4b80-a939-e7bda41052d5')",
+        "count": 2,
+        "timeMs": 0.000319004058837890625
     },
     {
         "sql": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
-        "count": 2
+        "count": 2,
+        "timeMs": 0.0002319812774658203125
     },
     {
         "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003230571746826171875
     },
     {
         "sql": "SELECT *\nFROM `settings`\nORDER BY `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.002585887908935546875
     },
     {
         "sql": "SET AUTOCOMMIT = 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000259876251220703125
     },
     {
         "sql": "START TRANSACTION",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000196933746337890625
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1724682435 WHERE (`id` = 9)",
-        "count": 1
+        "sql": "UPDATE `users` SET `last_activity` = 1725470168 WHERE (`id` = 9)",
+        "count": 1,
+        "timeMs": 0.0002620220184326171875
     },
     {
         "sql": "COMMIT",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002171993255615234375
     },
     {
         "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000422000885009765625
     },
     {
         "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002849102020263671875
     },
     {
         "sql": "SELECT *\nFROM `banners`\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004260540008544921875
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724630400) AND (`end_date` >= 1724716799) AND (`active` = 1)\nORDER BY `start_date`",
-        "count": 1
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1725408000) AND (`end_date` >= 1725494399) AND (`active` = 1)\nORDER BY `start_date`",
+        "count": 1,
+        "timeMs": 0.000319957733154296875
     },
     {
         "sql": "UPDATE `banners` SET `force_reset_cookie` = 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002510547637939453125
     },
     {
         "sql": "SELECT `is_sso_enabled`\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00065898895263671875
     },
     {
         "sql": "SELECT 1\nFROM `user_logins`\nWHERE (`current_auth` IS NOT NULL)\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002338886260986328125
     },
     {
         "sql": "SELECT *\nFROM `user_logins`\nWHERE (`name` = 'vasyl.zhdankin@agileengine.com')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002319812774658203125
     },
     {
         "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00045299530029296875
     },
     {
         "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 15)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0004341602325439453125
     },
     {
         "sql": "SELECT *\nFROM `project_access`\nWHERE (`project_id` = 15) AND (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000382900238037109375
     },
     {
         "sql": "SELECT *\nFROM `roles`\nORDER BY `display_order` ASC, `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003440380096435546875
     },
     {
         "sql": "\r\n\t-- runs_with_todos\r\n\tSELECT\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\tCOUNT(tests.id) as count\r\n\tFROM\r\n\t\truns\r\n\tJOIN\r\n\t\ttests\r\n\t\t\tON\r\n\t\truns.id = tests.run_id\r\n\tWHERE\r\n\t\truns.project_id = 15 AND\r\n\t\truns.is_completed = 0 AND\r\n\t\ttests.is_selected = 1 AND\r\n\t\ttests.assignedto_id = 9 AND\r\n\t\ttests.status_id != 1\r\n\tGROUP BY\r\n\t\truns.id,\r\n\t\truns.name,\r\n\t\truns.created_on\r\n\tORDER BY\r\n\t\truns.created_on desc",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0078670978546142578125
     }
 ]

@@ -1,98 +1,122 @@
 [
     {
         "sql": "SET AUTOCOMMIT = 1",
-        "count": 2
+        "count": 2,
+        "timeMs": 0.000155925750732421875
     },
     {
-        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = '66a4a081-5211-42c9-bb62-df8c5fb21352')",
-        "count": 2
+        "sql": "SELECT *\nFROM `sessions`\nWHERE (`session_id` = 'f0eb17f0-7c58-4b80-a939-e7bda41052d5')",
+        "count": 2,
+        "timeMs": 0.0002548694610595703125
     },
     {
         "sql": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
-        "count": 2
+        "count": 2,
+        "timeMs": 0.0002071857452392578125
     },
     {
         "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000218868255615234375
     },
     {
         "sql": "SELECT *\nFROM `settings`\nORDER BY `name` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0005319118499755859375
     },
     {
         "sql": "SET AUTOCOMMIT = 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.00016307830810546875
     },
     {
         "sql": "START TRANSACTION",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0001480579376220703125
     },
     {
-        "sql": "UPDATE `users` SET `last_activity` = 1724682435 WHERE (`id` = 9)",
-        "count": 1
+        "sql": "UPDATE `users` SET `last_activity` = 1725470168 WHERE (`id` = 9)",
+        "count": 1,
+        "timeMs": 0.00026702880859375
     },
     {
         "sql": "COMMIT",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000192165374755859375
     },
     {
         "sql": "SELECT *\nFROM `users`\nWHERE (`id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003859996795654296875
     },
     {
         "sql": "SELECT `group_id`\nFROM `group_users`\nWHERE (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000299930572509765625
     },
     {
         "sql": "SELECT *\nFROM `banners`\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000537872314453125
     },
     {
-        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1724630400) AND (`end_date` >= 1724716799) AND (`active` = 1)\nORDER BY `start_date`",
-        "count": 1
+        "sql": "SELECT *\nFROM `banners`\nWHERE (`start_date` <= 1725408000) AND (`end_date` >= 1725494399) AND (`active` = 1)\nORDER BY `start_date`",
+        "count": 1,
+        "timeMs": 0.00036907196044921875
     },
     {
         "sql": "UPDATE `banners` SET `force_reset_cookie` = 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002839565277099609375
     },
     {
         "sql": "SELECT `is_sso_enabled`\nFROM `users`\nWHERE (`email` = 'vasyl.zhdankin@agileengine.com')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003168582916259765625
     },
     {
         "sql": "SELECT 1\nFROM `user_logins`\nWHERE (`current_auth` IS NOT NULL)\nLIMIT 0,1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000278949737548828125
     },
     {
         "sql": "SELECT *\nFROM `user_logins`\nWHERE (`name` = 'vasyl.zhdankin@agileengine.com')",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0002810955047607421875
     },
     {
         "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000525951385498046875
     },
     {
         "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 15)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000401973724365234375
     },
     {
         "sql": "SELECT *\nFROM `preferences`\nWHERE (`user_id` = 9)",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000586032867431640625
     },
     {
         "sql": "SELECT COUNT(*) AS cnt FROM (\r\n\t\t-- projects_most_activities\r\n\t\tSELECT\r\n\t\tcount(test_changes.id) as total_count,\r\n\t\t\ttest_changes.created_on as date,\r\n\t\t\ttest_changes.status_id\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tJOIN\r\n\t\t\ttests\r\n\t\tON\r\n\t\t\ttests.id = test_changes.test_id\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\tON\r\n\t\t\tcases.id = tests.case_id\r\n\t\tJOIN\r\n\t\t\tstatuses\r\n\t\tON\r\n\t\t\tstatuses.id = test_changes.status_id\r\n\t\t\r\n\t\tWHERE\r\n\t\t\ttest_changes.created_on >= 1702684800\r\n\t\tAND\r\n\t\t\ttest_changes.created_on <= 1703116800\r\n\t\tAND\r\n\t\t\ttest_changes.project_id IN (15)\r\n\t\tAND\r\n\t\t\tcases.is_deleted = 0\r\n\t\tAND\r\n\t\t\tstatuses.is_notapplicable = 0\r\n\t\t\r\n\t\tGROUP BY\r\n\t\t\ttest_changes.created_on, test_changes.status_id) t1",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.052525043487548828125
     },
     {
         "sql": "\r\n\t\t-- projects_most_activities\r\n\t\tSELECT\r\n\t\tcount(test_changes.id) as total_count,\r\n\t\t\ttest_changes.created_on as date,\r\n\t\t\ttest_changes.status_id\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tJOIN\r\n\t\t\ttests\r\n\t\tON\r\n\t\t\ttests.id = test_changes.test_id\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\tON\r\n\t\t\tcases.id = tests.case_id\r\n\t\tJOIN\r\n\t\t\tstatuses\r\n\t\tON\r\n\t\t\tstatuses.id = test_changes.status_id\r\n\t\t\r\n\t\tWHERE\r\n\t\t\ttest_changes.created_on >= 1702684800\r\n\t\tAND\r\n\t\t\ttest_changes.created_on <= 1703116800\r\n\t\tAND\r\n\t\t\ttest_changes.project_id IN (15)\r\n\t\tAND\r\n\t\t\tcases.is_deleted = 0\r\n\t\tAND\r\n\t\t\tstatuses.is_notapplicable = 0\r\n\t\t\r\n\t\tGROUP BY\r\n\t\t\ttest_changes.created_on, test_changes.status_id",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.01329708099365234375
     },
     {
         "sql": "\r\n\t-- statuses_is_not_applicable_get\r\n\tSELECT\r\n\t\t*\r\n\tFROM\r\n\t\tstatuses\r\n\tWHERE\r\n\t\tis_notapplicable != 0",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.000442981719970703125
     },
     {
         "sql": "SELECT *\nFROM `statuses`\nWHERE (`is_notapplicable` = 0)\nORDER BY `display_order` ASC",
-        "count": 1
+        "count": 1,
+        "timeMs": 0.0003731250762939453125
     }
 ]
