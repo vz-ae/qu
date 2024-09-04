@@ -1,0 +1,577 @@
+[
+    {
+        "sql": "SELECT *\nFROM `statuses`\nWHERE (`is_active` = 1) AND (`is_notapplicable` = '0')",
+        "count": 10,
+        "timeMs": 0.0002839565277099609375
+    },
+    {
+        "sql": "SELECT *\nFROM `projects`\nWHERE (`id` = 8)",
+        "count": 4,
+        "timeMs": 0.0002720355987548828125
+    },
+    {
+        "sql": "SET AUTOCOMMIT = 1",
+        "count": 2,
+        "timeMs": 0.0001780986785888671875
+    },
+    {
+        "sql": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
+        "count": 2,
+        "timeMs": 0.00016689300537109375
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'chart_theme')",
+        "count": 2,
+        "timeMs": 0.000485897064208984375
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'primary_attachment_db')",
+        "count": 2,
+        "timeMs": 0.00018310546875
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'report_dir')",
+        "count": 2,
+        "timeMs": 0.000322818756103515625
+    },
+    {
+        "sql": "SET NAMES 'utf8' COLLATE 'utf8_unicode_ci'",
+        "count": 1,
+        "timeMs": 0.0007669925689697265625
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy')",
+        "count": 1,
+        "timeMs": 0.00059413909912109375
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_policy_custom_timeout')",
+        "count": 1,
+        "timeMs": 0.0002901554107666015625
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_absolute_policy')",
+        "count": 1,
+        "timeMs": 0.0002269744873046875
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'session_remember_me_disabled')",
+        "count": 1,
+        "timeMs": 0.000277996063232421875
+    },
+    {
+        "sql": "INSERT INTO `sessions` (`session_id`,`ip_address`,`user_agent`,`last_activity`,`user_data`) VALUES ('d22b1bee-853a-4bda-84b3-2b977b22e66f','','',1725390004,NULL)",
+        "count": 1,
+        "timeMs": 0.0025179386138916015625
+    },
+    {
+        "sql": "SELECT `value`\nFROM `settings`\nWHERE (`name` = 'secure_cookie')",
+        "count": 1,
+        "timeMs": 0.000255107879638671875
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nORDER BY `name` ASC",
+        "count": 1,
+        "timeMs": 0.000710964202880859375
+    },
+    {
+        "sql": "SELECT COUNT(*) AS `row_count`\nFROM `users`\nWHERE (`is_active` = 1)",
+        "count": 1,
+        "timeMs": 0.00125598907470703125
+    },
+    {
+        "sql": "SELECT *\nFROM `jobs`\nWHERE (`name` = 'reports')",
+        "count": 1,
+        "timeMs": 0.00061798095703125
+    },
+    {
+        "sql": "UPDATE `reports` SET `status` = 3 WHERE (`status` = 4) AND (`is_locked` = 1) AND (`heartbeat` < 1725303604)",
+        "count": 1,
+        "timeMs": 0.0106980800628662109375
+    },
+    {
+        "sql": "SELECT *\nFROM `reports`\nWHERE (`status` = 1)\nORDER BY `id` ASC",
+        "count": 1,
+        "timeMs": 0.0053050518035888671875
+    },
+    {
+        "sql": "SET AUTOCOMMIT = 0",
+        "count": 1,
+        "timeMs": 0.0002858638763427734375
+    },
+    {
+        "sql": "START TRANSACTION",
+        "count": 1,
+        "timeMs": 0.000225067138671875
+    },
+    {
+        "sql": "\r\n\t-- reports_locked_get\r\n\tSELECT\r\n\t\t*\r\n\tFROM\r\n\t\treports\r\n\tWHERE\r\n\t\tid = 5569\r\n\tFOR UPDATE",
+        "count": 1,
+        "timeMs": 0.000443935394287109375
+    },
+    {
+        "sql": "UPDATE `reports` SET `is_locked` = 1,`heartbeat` = 1725390005 WHERE (`id` = 5569)",
+        "count": 1,
+        "timeMs": 0.000298976898193359375
+    },
+    {
+        "sql": "COMMIT",
+        "count": 1,
+        "timeMs": 0.0008640289306640625
+    },
+    {
+        "sql": "UPDATE `reports` SET `status` = 4,`status_message` = NULL,`status_trace` = NULL,`executed_on` = 1725390005,`execution_time` = NULL WHERE (`id` = 5569)",
+        "count": 1,
+        "timeMs": 0.0010740756988525390625
+    },
+    {
+        "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 1)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
+        "count": 1,
+        "timeMs": 0.00185489654541015625
+    },
+    {
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (8,10,14,17,18,24,26,29,33,70,108,44,110,79,1,2,120,3,4,27,28,31,109,32,34,111))",
+        "count": 1,
+        "timeMs": 0.0006580352783203125
+    },
+    {
+        "sql": "SELECT *\nFROM `fields`\nWHERE (`entity_id` = 2)\nORDER BY `is_system` DESC, `location_id` ASC, `display_order`",
+        "count": 1,
+        "timeMs": 0.0005321502685546875
+    },
+    {
+        "sql": "SELECT `field_id`,`template_id`\nFROM `field_templates`\nWHERE (`field_id` IN (11,12,13,5,16,30,40,43,41,42,74,80))",
+        "count": 1,
+        "timeMs": 0.000316143035888671875
+    },
+    {
+        "sql": "SELECT *\nFROM `suites`\nWHERE (`project_id` = 8) AND (`is_copy` = 0)\nORDER BY `name` ASC",
+        "count": 1,
+        "timeMs": 0.001925945281982421875
+    },
+    {
+        "sql": "SELECT *\nFROM `runs`\nWHERE (`project_id` = 8) AND (`id` IN (8271,7574,3898,3888,3887,3885,3858,3706,3705,3704,3702,3701,3551,3550,3542,3444,3397,3351,3350,3317,3316,3315,1321,232,171,170,169,168,161)) AND (`is_plan` = 0) AND (`suite_id` IN (1828,1822,1817,1819,1821,1820,43,1814,1863,1818,47,50,44,51,1808,6368,1815,2603,1827,1805))\nORDER BY `id` DESC",
+        "count": 1,
+        "timeMs": 0.0056397914886474609375
+    },
+    {
+        "sql": "SELECT *\nFROM `runs`\nWHERE (`id` IN (3886,3886,3541,3541,3541,3349,3349)) AND (`is_plan` = 1)",
+        "count": 1,
+        "timeMs": 0.0003077983856201171875
+    },
+    {
+        "sql": "SELECT *\nFROM `milestones`\nWHERE (`id` IN (54,53,53,54,15,15))\nORDER BY `name`",
+        "count": 1,
+        "timeMs": 0.00042819976806640625
+    },
+    {
+        "sql": "\r\n\t-- runs_activity\r\n\tSELECT\r\n\t\tdate,\r\n\t\tSUM(passed_count) AS passed_count,\r\n\t\tSUM(retest_count) AS retest_count,\r\n\t\tSUM(failed_count) AS failed_count,\r\n\t\tSUM(untested_count) AS untested_count,\r\n\t\tSUM(blocked_count) AS blocked_count,\r\n\t\tSUM(custom_status1_count) AS custom_status1_count,\r\n\t\tSUM(custom_status2_count) AS custom_status2_count,\r\n\t\tSUM(custom_status3_count) AS custom_status3_count,\r\n\t\tSUM(custom_status4_count) AS custom_status4_count,\r\n\t\tSUM(custom_status5_count) AS custom_status5_count,\r\n\t\tSUM(custom_status6_count) AS custom_status6_count,\r\n\t\tSUM(custom_status7_count) AS custom_status7_count\r\n\tFROM\r\n\t\ttest_activities\r\n\tWHERE\r\n\t\tdate\r\n\t\t\tBETWEEN 20240101 AND 20240903\r\n\t\tAND\r\n\t\t\tproject_id = 8\r\n\t\tAND\r\n\t\t\trun_id IN (8271,7574,3898,3888,3887,3885,3858,3706,3705,3704,3702,3701,3551,3550,3542,3444,3397,3351,3350,3317,3316,3315,1321,232,171)\r\n\tGROUP BY\r\n\t\tdate",
+        "count": 1,
+        "timeMs": 0.0057818889617919921875
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order` ASC",
+        "count": 1,
+        "timeMs": 0.000340938568115234375
+    },
+    {
+        "sql": "\r\n\t-- runs_activities_range\r\n\tSELECT\r\n\t\ttest_changes.id,\r\n\t\ttest_changes.status_id,\r\n\t\ttest_changes.created_on,\r\n\t\ttest_changes.test_id,\r\n\t\ttest_changes.user_id,\r\n\t\ttest_changes.assignedto_id,\r\n\t\ttest_changes.unassigned\r\n\tFROM\r\n\t\ttest_changes\r\n\tFORCE INDEX(ix_test_changes_run_order)\r\n\tWHERE\r\n\t\ttest_changes.run_id IN (8271,7574,3898,3888,3887,3885,3858,3706,3705,3704,3702,3701,3551,3550,3542,3444,3397,3351,3350,3317,3316,3315,1321,232,171) AND\r\n\t\ttest_changes.is_selected = 1 AND\r\n\t\ttest_changes.created_on BETWEEN 1704067200 AND 1725407999\r\n\tORDER BY\r\n\t\ttest_changes.created_on DESC\r\n\tLIMIT\r\n\t\t500",
+        "count": 1,
+        "timeMs": 0.0045979022979736328125
+    },
+    {
+        "sql": "\r\n\t-- runs_activities_rels\r\n\tSELECT\r\n\t\ttests.id,\r\n\t\ttests.is_completed,\r\n\t\tcases.title\r\n\tFROM\r\n\t\ttests\r\n\tJOIN\r\n\t\tcases\r\n\t\t\tON\r\n\t\tcases.id = tests.content_id\r\n\tWHERE\r\n\t\ttests.id IN (33592729)",
+        "count": 1,
+        "timeMs": 0.000358104705810546875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 1808",
+        "count": 1,
+        "timeMs": 0.00173187255859375
+    },
+    {
+        "sql": "SELECT `id`\nFROM `statuses`\nWHERE (`is_final` = 1)",
+        "count": 1,
+        "timeMs": 0.0002300739288330078125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 8271",
+        "count": 1,
+        "timeMs": 0.001594066619873046875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 1828",
+        "count": 1,
+        "timeMs": 0.0014801025390625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 7574",
+        "count": 1,
+        "timeMs": 0.0018939971923828125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3898",
+        "count": 1,
+        "timeMs": 0.0011789798736572265625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 1822",
+        "count": 1,
+        "timeMs": 0.0006999969482421875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3888",
+        "count": 1,
+        "timeMs": 0.0036590099334716796875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3887",
+        "count": 1,
+        "timeMs": 0.001164913177490234375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6299",
+        "count": 1,
+        "timeMs": 0.0003869533538818359375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3885",
+        "count": 1,
+        "timeMs": 0.001224994659423828125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6292",
+        "count": 1,
+        "timeMs": 0.000545978546142578125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3858",
+        "count": 1,
+        "timeMs": 0.001101016998291015625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 1805",
+        "count": 1,
+        "timeMs": 0.0003478527069091796875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3706",
+        "count": 1,
+        "timeMs": 0.0014059543609619140625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 1820",
+        "count": 1,
+        "timeMs": 0.009997844696044921875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3705",
+        "count": 1,
+        "timeMs": 0.053514003753662109375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 51",
+        "count": 1,
+        "timeMs": 0.0101439952850341796875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3704",
+        "count": 1,
+        "timeMs": 0.005999088287353515625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 1819",
+        "count": 1,
+        "timeMs": 4.070664882659912109375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3702",
+        "count": 1,
+        "timeMs": 3.7949349880218505859375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3701",
+        "count": 1,
+        "timeMs": 0.0025041103363037109375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3551",
+        "count": 1,
+        "timeMs": 0.002696990966796875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3550",
+        "count": 1,
+        "timeMs": 0.00119304656982421875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3542",
+        "count": 1,
+        "timeMs": 0.0019280910491943359375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6291",
+        "count": 1,
+        "timeMs": 0.0050389766693115234375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3444",
+        "count": 1,
+        "timeMs": 0.0105440616607666015625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3397",
+        "count": 1,
+        "timeMs": 2.860766887664794921875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 1811",
+        "count": 1,
+        "timeMs": 0.002460002899169921875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3351",
+        "count": 1,
+        "timeMs": 0.0027101039886474609375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 1810",
+        "count": 1,
+        "timeMs": 0.0002520084381103515625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3350",
+        "count": 1,
+        "timeMs": 0.00107097625732421875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6302",
+        "count": 1,
+        "timeMs": 0.000877857208251953125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3317",
+        "count": 1,
+        "timeMs": 0.0009129047393798828125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6300",
+        "count": 1,
+        "timeMs": 0.0002458095550537109375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3316",
+        "count": 1,
+        "timeMs": 0.0008800029754638671875
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6301",
+        "count": 1,
+        "timeMs": 0.000235080718994140625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 3315",
+        "count": 1,
+        "timeMs": 0.0008070468902587890625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6298",
+        "count": 1,
+        "timeMs": 0.000584125518798828125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 1321",
+        "count": 1,
+        "timeMs": 0.0079669952392578125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6297",
+        "count": 1,
+        "timeMs": 0.0002992153167724609375
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 232",
+        "count": 1,
+        "timeMs": 0.007006168365478515625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_estimate\r\n\tSELECT\r\n\t\t s.id,\r\n\t\t COUNT(*) AS case_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate AS decimal(20))), 0) AS estimate,\r\n\t\t COUNT(c.estimate) AS estimate_count,\r\n\t\t COALESCE(SUM(CAST(c.estimate_forecast AS decimal(20) )), 0) AS forecast,\r\n\t\t COUNT(estimate_forecast) AS forecast_count\r\n\tFROM\r\n \t\tsuites AS s\r\n\tLEFT JOIN\r\n \t\tcases  AS c\r\n  \tON\r\n \t\tc.suite_id = s.id\r\n\tWHERE s.id = 6296",
+        "count": 1,
+        "timeMs": 0.0005590915679931640625
+    },
+    {
+        "sql": "\r\n\t-- forecasts_progress\r\n\tSELECT\r\n\t\tid,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as test_count,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as tests_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as estimate,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as estimate_todo,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9)) as forecast_todo,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id NOT IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_todo_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(estimate_forecast), 0)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9)) as forecast_completed,\r\n\t\t(SELECT\r\n\t\t\tCOUNT(*)\r\n\t\tFROM\r\n\t\t\ttests\r\n\t\tJOIN\r\n\t\t\tcases\r\n\t\t\t\tON\r\n\t\t\tcases.id = tests.content_id\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1 AND\r\n\t\t\ttests.status_id IN (1,2,5,6,9) AND\r\n\t\t\testimate_forecast IS NULL) as forecast_completed_missing,\r\n\t\t(SELECT\r\n\t\t\tCOALESCE(SUM(elapsed), 0)\r\n\t\tFROM\r\n\t\t\ttest_changes\r\n\t\tWHERE\r\n\t\t\trun_id = runs.id AND\r\n\t\t\tis_selected = 1) as elapsed\r\n\tFROM\r\n\t\truns\r\n\tWHERE\r\n\t\tid = 171",
+        "count": 1,
+        "timeMs": 0.004047870635986328125
+    },
+    {
+        "sql": "\r\n\t-- forecasts_burndown\r\n\tSELECT\r\n\t\tdate,\r\n\t\tSUM(tests) AS tests,\r\n\t\tSUM(forecasts) AS forecasts\r\n\tFROM\r\n\t\ttest_progress\r\n\tWHERE\r\n\t\trun_id IN (8271,7574,3898,3888,3887,3885,3858,3706,3705,3704,3702,3701,3551,3550,3542,3444,3397,3351,3350,3317,3316,3315,1321,232,171)\r\n\tGROUP BY\r\n\t\tdate\r\n\tORDER BY\r\n\t\tdate",
+        "count": 1,
+        "timeMs": 0.0058829784393310546875
+    },
+    {
+        "sql": "SELECT *\nFROM `users`\nORDER BY `name`",
+        "count": 1,
+        "timeMs": 0.0018398761749267578125
+    },
+    {
+        "sql": "SELECT *\nFROM `statuses`\nORDER BY `display_order`",
+        "count": 1,
+        "timeMs": 0.000308990478515625
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 8271) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.00557708740234375
+    },
+    {
+        "sql": "SELECT `id`,`name`,`description`,`parent_id`,`depth`\nFROM `sections`\nWHERE (`suite_id` = 1808)\nORDER BY `display_order` ASC",
+        "count": 1,
+        "timeMs": 0.0013930797576904296875
+    },
+    {
+        "sql": "SELECT `cases`.*,`tests`.`id`,`case_statuses`.`name` AS `case_status`,`tests`.`status_id`,`tests`.`assignedto_id`,`tests`.`in_progress`,`tests`.`in_progress_by`,`tests`.`last_status_change_id`,`tests`.`case_id`,`tests`.`content_id`,`tests`.`run_id`,`tests`.`tested_by`,`tests`.`tested_on`\nFROM `tests`\nJOIN `cases` ON tests.content_id = cases.id\nJOIN `case_statuses` ON case_statuses.id = cases.status_id\nWHERE (`tests`.`id` IN (33592729)) AND (`cases`.`is_deleted` = 0)",
+        "count": 1,
+        "timeMs": 0.0006630420684814453125
+    },
+    {
+        "sql": "SELECT *\nFROM `sections`\nWHERE (`id` IN (127434))\nORDER BY `display_order` ASC",
+        "count": 1,
+        "timeMs": 0.00024509429931640625
+    },
+    {
+        "sql": "SELECT `defects` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (33592729)) AND (`defects` IS NOT NULL)\nORDER BY `id`, `defects`",
+        "count": 1,
+        "timeMs": 0.0032269954681396484375
+    },
+    {
+        "sql": "SELECT `elapsed` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (33592729)) AND (`elapsed` IS NOT NULL)\nORDER BY `id`, `elapsed`",
+        "count": 1,
+        "timeMs": 0.00030803680419921875
+    },
+    {
+        "sql": "SELECT `version` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (33592729)) AND (`version` IS NOT NULL)\nORDER BY `id`, `version`",
+        "count": 1,
+        "timeMs": 0.0002801418304443359375
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 7574) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.001983165740966796875
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 3898) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.001657009124755859375
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 3888) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.003982067108154296875
+    },
+    {
+        "sql": "SELECT `id`,`name`,`description`,`parent_id`,`depth`\nFROM `sections`\nWHERE (`suite_id` = 1822)\nORDER BY `display_order` ASC",
+        "count": 1,
+        "timeMs": 0.00094890594482421875
+    },
+    {
+        "sql": "SELECT `cases`.*,`tests`.`id`,`case_statuses`.`name` AS `case_status`,`tests`.`status_id`,`tests`.`assignedto_id`,`tests`.`in_progress`,`tests`.`in_progress_by`,`tests`.`last_status_change_id`,`tests`.`case_id`,`tests`.`content_id`,`tests`.`run_id`,`tests`.`tested_by`,`tests`.`tested_on`\nFROM `tests`\nJOIN `cases` ON tests.content_id = cases.id\nJOIN `case_statuses` ON case_statuses.id = cases.status_id\nWHERE (`tests`.`id` IN (7030283,7030284,7030285,7030286,7030287,7030288,7030289,7030291,7030292,7030293,7030290,7030294,7030295,7030296,7030297,7030298,7030299,7030300,7030301,7030302,7030303,7030304,7030305,7030306,7030307,7030308,7030309,7030310,7030311,7030312,7030313,7030314,7030315,7030316,7030317,7030318,7030319,7030320,7030321,7030322,7030323,7030324,7030325,7030326,7030327,7030328,7030329,7030330,7030331,7030332,7030333,7030334,7030335,7030336,7030337,7030338,7030339,7030340,7030341,7030342,7030343,7030344,7030345,7030346,7030347,7030348,7030349,7030350,7030351,7030352,7030353,7030354,7030355,7030356,7030357,7030358,7030359,7030360,7030361,7030362,7030363,7030364,7030365,7030366,7030367,7030368,7030369,7030370,7030371,7030372,7030373,7030374,7030375,7030376,7030377,7030378,7030379,7030380,7030381,7030382,7030383,7030384,7030385,7030386,7030387,7030435,7030388,7030389,7030390,7030391,7030392,7030393,7030394,7030395,7030396,7030397,7030398,7030399,7030400,7030401,7030402,7030403,7030404,7030405,7030406,7030407,7030408,7030409,7030410,7030411,7030412,7030413,7030414,7030415,7030416,7030417,7030418,7030419,7030420,7030421,7030422,7030423,7030424,7030425,7030426,7030427,7030428,7030429,7030430,7030431,7030432,7030433,7030434)) AND (`cases`.`is_deleted` = 0)",
+        "count": 1,
+        "timeMs": 0.0016849040985107421875
+    },
+    {
+        "sql": "SELECT *\nFROM `sections`\nWHERE (`id` IN (145515,145515,145515,145515,145515,145515,145515,145515,145515,145515,145515,145515,145515,145515,145516,145516,145516,145516,145518,145518,145518,145520,145520,145520,145520,145520,145521,145521,145523,145523,145523,145523,145523,145523,145523,145524,145524,145524,145524,145524,145524,145524,145524,145524,145524,145524,145524,145524,145525,145525,145525,145525,145525,145525,145527,145527,145527,145528,145528,145529,145529,145529,145529,145529,145529,145529,145529,145530,145530,145530,145530,145531,145531,145531,145533,145533,145533,145533,145533,145533,145533,145533,145533,145533,145533,145536,145536,145537,145537,145537,145538,145538,145538,145538,145538,145539,145539,145539,145539,145539,145539,145540,145540,145540,145540,145541,145541,145541,145543,145543,145543,145543,145543,145543,145543,145543,145544,145544,145544,145544,145545,145545,145545,145545,145546,145546,145546,145547,145547,145547,145547,145547,145547,145547,145547,145547,145547,145548,145548,145548,145548,145548,145548,145548,145548,145549,145549,145549,145549,145549,145550,145551,145540))\nORDER BY `display_order` ASC",
+        "count": 1,
+        "timeMs": 0.00063800811767578125
+    },
+    {
+        "sql": "SELECT `defects` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (7030283,7030284,7030285,7030286,7030287,7030288,7030289,7030291,7030292,7030293,7030290,7030294,7030295,7030296,7030297,7030298,7030299,7030300,7030301,7030302,7030303,7030304,7030305,7030306,7030307,7030308,7030309,7030310,7030311,7030312,7030313,7030314,7030315,7030316,7030317,7030318,7030319,7030320,7030321,7030322,7030323,7030324,7030325,7030326,7030327,7030328,7030329,7030330,7030331,7030332,7030333,7030334,7030335,7030336,7030337,7030338,7030339,7030340,7030341,7030342,7030343,7030344,7030345,7030346,7030347,7030348,7030349,7030350,7030351,7030352,7030353,7030354,7030355,7030356,7030357,7030358,7030359,7030360,7030361,7030362,7030363,7030364,7030365,7030366,7030367,7030368,7030369,7030370,7030371,7030372,7030373,7030374,7030375,7030376,7030377,7030378,7030379,7030380,7030381,7030382,7030383,7030384,7030385,7030386,7030387,7030435,7030388,7030389,7030390,7030391,7030392,7030393,7030394,7030395,7030396,7030397,7030398,7030399,7030400,7030401,7030402,7030403,7030404,7030405,7030406,7030407,7030408,7030409,7030410,7030411,7030412,7030413,7030414,7030415,7030416,7030417,7030418,7030419,7030420,7030421,7030422,7030423,7030424,7030425,7030426,7030427,7030428,7030429,7030430,7030431,7030432,7030433,7030434)) AND (`defects` IS NOT NULL)\nORDER BY `id`, `defects`",
+        "count": 1,
+        "timeMs": 0.0033528804779052734375
+    },
+    {
+        "sql": "SELECT `elapsed` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (7030283,7030284,7030285,7030286,7030287,7030288,7030289,7030291,7030292,7030293,7030290,7030294,7030295,7030296,7030297,7030298,7030299,7030300,7030301,7030302,7030303,7030304,7030305,7030306,7030307,7030308,7030309,7030310,7030311,7030312,7030313,7030314,7030315,7030316,7030317,7030318,7030319,7030320,7030321,7030322,7030323,7030324,7030325,7030326,7030327,7030328,7030329,7030330,7030331,7030332,7030333,7030334,7030335,7030336,7030337,7030338,7030339,7030340,7030341,7030342,7030343,7030344,7030345,7030346,7030347,7030348,7030349,7030350,7030351,7030352,7030353,7030354,7030355,7030356,7030357,7030358,7030359,7030360,7030361,7030362,7030363,7030364,7030365,7030366,7030367,7030368,7030369,7030370,7030371,7030372,7030373,7030374,7030375,7030376,7030377,7030378,7030379,7030380,7030381,7030382,7030383,7030384,7030385,7030386,7030387,7030435,7030388,7030389,7030390,7030391,7030392,7030393,7030394,7030395,7030396,7030397,7030398,7030399,7030400,7030401,7030402,7030403,7030404,7030405,7030406,7030407,7030408,7030409,7030410,7030411,7030412,7030413,7030414,7030415,7030416,7030417,7030418,7030419,7030420,7030421,7030422,7030423,7030424,7030425,7030426,7030427,7030428,7030429,7030430,7030431,7030432,7030433,7030434)) AND (`elapsed` IS NOT NULL)\nORDER BY `id`, `elapsed`",
+        "count": 1,
+        "timeMs": 0.001618862152099609375
+    },
+    {
+        "sql": "SELECT `version` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (7030283,7030284,7030285,7030286,7030287,7030288,7030289,7030291,7030292,7030293,7030290,7030294,7030295,7030296,7030297,7030298,7030299,7030300,7030301,7030302,7030303,7030304,7030305,7030306,7030307,7030308,7030309,7030310,7030311,7030312,7030313,7030314,7030315,7030316,7030317,7030318,7030319,7030320,7030321,7030322,7030323,7030324,7030325,7030326,7030327,7030328,7030329,7030330,7030331,7030332,7030333,7030334,7030335,7030336,7030337,7030338,7030339,7030340,7030341,7030342,7030343,7030344,7030345,7030346,7030347,7030348,7030349,7030350,7030351,7030352,7030353,7030354,7030355,7030356,7030357,7030358,7030359,7030360,7030361,7030362,7030363,7030364,7030365,7030366,7030367,7030368,7030369,7030370,7030371,7030372,7030373,7030374,7030375,7030376,7030377,7030378,7030379,7030380,7030381,7030382,7030383,7030384,7030385,7030386,7030387,7030435,7030388,7030389,7030390,7030391,7030392,7030393,7030394,7030395,7030396,7030397,7030398,7030399,7030400,7030401,7030402,7030403,7030404,7030405,7030406,7030407,7030408,7030409,7030410,7030411,7030412,7030413,7030414,7030415,7030416,7030417,7030418,7030419,7030420,7030421,7030422,7030423,7030424,7030425,7030426,7030427,7030428,7030429,7030430,7030431,7030432,7030433,7030434)) AND (`version` IS NOT NULL)\nORDER BY `id`, `version`",
+        "count": 1,
+        "timeMs": 0.0016100406646728515625
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 3887) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.000364780426025390625
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 3885) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.0003530979156494140625
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 3858) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.00179004669189453125
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 3706) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.001224040985107421875
+    },
+    {
+        "sql": "SELECT `tests`.`id`,`cases`.`section_id`\nFROM `tests`\nJOIN `cases` ON cases.id = tests.content_id\nJOIN `sections` ON sections.id = cases.section_id\nWHERE (`tests`.`run_id` = 3705) AND (`tests`.`is_selected` = 1) AND (`tests`.`status_id` IN (1,2,3,4,5,7,8,9)) AND (`cases`.`is_deleted` = 0)\nORDER BY `sections`.`display_order`, `cases`.`display_order`",
+        "count": 1,
+        "timeMs": 0.0239689350128173828125
+    },
+    {
+        "sql": "SELECT `id`,`name`,`description`,`parent_id`,`depth`\nFROM `sections`\nWHERE (`suite_id` = 1820)\nORDER BY `display_order` ASC",
+        "count": 1,
+        "timeMs": 0.0028209686279296875
+    },
+    {
+        "sql": "SELECT `cases`.*,`tests`.`id`,`case_statuses`.`name` AS `case_status`,`tests`.`status_id`,`tests`.`assignedto_id`,`tests`.`in_progress`,`tests`.`in_progress_by`,`tests`.`last_status_change_id`,`tests`.`case_id`,`tests`.`content_id`,`tests`.`run_id`,`tests`.`tested_by`,`tests`.`tested_on`\nFROM `tests`\nJOIN `cases` ON tests.content_id = cases.id\nJOIN `case_statuses` ON case_statuses.id = cases.status_id\nWHERE (`tests`.`id` IN (6094260,6094261,6094262,6097975,6094263,6094264,6094265,6094266,6094267,6094268,6094269,6094270,6094271,6094272,6094273,6094274,6094275,6094276,6094277,6094278,6094279,6094280,6094281,6094282,6094283,6094284,6094285,6094286,6094287,6094288,6094289,6094290,6094291,6094292,6094293,6094294,6094295,6094296,6094297,6094298,6094299,6094300,6094301,6094302,6094303,6094304,6094305,6094306,6094307,6094308,6094309,6094310,6094311,6094312,6094313,6094314,6094315,6094316,6094317,6094318,6094319,6094320,6094321,6094322,6094323,6094324,6094325,6094326,6094327,6094328,6094329,6094330,6094331,6094332,6094333,6094334,6094335,6094336,6094337,6094338,6094339,6094340,6094341,6094342,6094343,6094344,6094345,6094346,6094347,6094348,6094349,6094350,6094351,6094352,6094353,6094354,6094355,6094356,6094357,6094358,6094359,6094360,6094361,6094362,6094363,6094364,6094365,6094366,6094367,6094368,6094369,6094370,6094371,6094372,6094373,6094374,6094375,6094376,6094377,6094378,6094379,6094380,6094381,6094382,6094383,6094384,6094385,6094386,6094387,6094388,6094389,6094390,6094391,6094392,6094393,6094394,6094395,6094396,6094397,6094398,6094399,6094400,6094401,6094402,6094403,6094404,6094405,6094406,6094407,6094408,6094409,6094410,6094411,6094412,6094413,6094414,6094415,6094416,6094417,6094418,6094419,6094420,6094421,6094422,6094423,6094424,6094425,6094426,6094427,6094428,6094429,6094430,6094431,6094432,6094433,6094434,6094435,6094436,6094437,6094438,6094439,6094440,6094441,6094442,6094443,6094444,6094445,6094446,6094447,6094448,6094449,6094450,6094451,6094452,6094453,6094454,6094455,6094456,6094457,6094458,6094459,6094460,6094461,6094462,6094463,6094464,6094465,6094466,6094467,6094468,6094469,6094470,6094471,6094472,6094473,6094474,6094475,6094476,6094477,6094478,6094479,6094480,6094481,6094482,6094483,6094484,6094485,6094486,6094487,6094488,6094489,6094490,6094491,6094492,6094493,6094494,6094495,6094496,6094497,6094498,6094499,6094500,6094501,6094502,6094503,6094504,6094505,6094506,6094507,6094508,6094509,6094510,6094511,6094512,6094513,6094514,6094515,6094516,6094517,6094518,6094519,6094520,6094521,6094522,6094523,6094524,6094525,6094526,6094527,6094528,6094529,6094530,6094531,6094532,6094533,6094534,6094535,6094536,6094537,6094538,6094539,6094540,6094541,6094542,6094543,6094544,6094545,6094546,6094547,6094548,6094549,6094550,6094551,6094552,6094553,6094554,6094555,6094556,6094557,6094558,6094559,6094560,6094561,6094562,6094563,6094564,6094565,6094566,6094567,6094568,6094569,6094570,6094571,6094572,6094573,6094574,6094575,6094576,6094577,6094578,6094579,6094580,6094581,6094582,6094583,6094584,6094585,6094586,6094587,6094588,6094589,6094590,6094591,6094592,6094593,6094594,6094595,6094596,6094597,6094598,6094599,6094600,6094601,6094602,6094603,6094604)) AND (`cases`.`is_deleted` = 0)",
+        "count": 1,
+        "timeMs": 0.0026957988739013671875
+    },
+    {
+        "sql": "SELECT *\nFROM `sections`\nWHERE (`id` IN (144752,144752,144753,144755,144755,144755,144756,144756,144757,144757,144758,144758,144759,144759,144760,144767,144768,144768,144769,144769,144769,144770,144770,144770,144771,144771,144771,144771,144772,144772,144772,144772,144773,144773,144773,144773,144773,144773,144773,144773,144773,144773,144773,144773,144773,144777,144777,144777,144777,144777,144777,144777,144777,144777,144778,144779,144779,144779,144779,144779,144779,144780,144780,144780,144780,144780,144780,144782,144782,144782,144782,144782,144782,144783,144783,144783,144784,144784,144784,144784,144784,144784,144786,144786,144786,144786,144786,144786,144789,144789,144789,144789,144789,144789,144789,144789,144789,144789,144789,144789,144789,144789,144789,144789,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144790,144791,144791,144791,144791,144791,144791,144791,144791,144791,144791,144791,144791,144791,144791,144793,144794,144794,144794,144794,144794,144796,144796,144796,144796,144796,144796,144796,144796,144796,144796,144797,144797,144797,144797,144797,144798,144798,144798,144798,144798,144798,144799,144799,144799,144799,144799,144799,144799,144800,144800,144801,144801,144801,144801,144801,144801,144802,144802,144802,144802,144803,144803,144803,144803,144803,144803,144803,144803,144803,144803,144803,144803,144804,144804,144804,144805,144805,144805,144805,144805,144805,144805,144806,144806,144806,144806,144806,144806,144807,144807,144807,144808,144808,144809,144809,144809,144809,144809,144809,144809,144809,144809,144810,144810,144811,144811,144811,144811,144811,144811,144811,144811,144811,144813,144813,144813,144813,144814,144814,144814,144814,144815,144815,144815,144815,144816,144816,144816,144816,144816,144816,144816,144817,144817,144817,144817,144818,144818,144818,144818,144819,144819,144819,144819,144820,144820,144820,144820,144820,144820,144820,144822,144823,144823,144823,144823,144823,144824,144825,144825,144825,144825,144826,144827,144827,144827,144827,144827,144827,144827,144827,144827,144827,144827,144828,144829,144829,144829,144829,144829,144829,144831,144831,144831,144831,144831,144831,144832,144832,144832,144832,144833,144834,144834,144834,144834,144834,144834,144834,144834,144834,144834,144836,144836,144836,144836,144837,144837,144837,144837,144837,144837,144838,144838,144838,144838,144838,144838,144838,144753))\nORDER BY `display_order` ASC",
+        "count": 1,
+        "timeMs": 0.000782012939453125
+    },
+    {
+        "sql": "SELECT `defects` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (6094260,6094261,6094262,6097975,6094263,6094264,6094265,6094266,6094267,6094268,6094269,6094270,6094271,6094272,6094273,6094274,6094275,6094276,6094277,6094278,6094279,6094280,6094281,6094282,6094283,6094284,6094285,6094286,6094287,6094288,6094289,6094290,6094291,6094292,6094293,6094294,6094295,6094296,6094297,6094298,6094299,6094300,6094301,6094302,6094303,6094304,6094305,6094306,6094307,6094308,6094309,6094310,6094311,6094312,6094313,6094314,6094315,6094316,6094317,6094318,6094319,6094320,6094321,6094322,6094323,6094324,6094325,6094326,6094327,6094328,6094329,6094330,6094331,6094332,6094333,6094334,6094335,6094336,6094337,6094338,6094339,6094340,6094341,6094342,6094343,6094344,6094345,6094346,6094347,6094348,6094349,6094350,6094351,6094352,6094353,6094354,6094355,6094356,6094357,6094358,6094359,6094360,6094361,6094362,6094363,6094364,6094365,6094366,6094367,6094368,6094369,6094370,6094371,6094372,6094373,6094374,6094375,6094376,6094377,6094378,6094379,6094380,6094381,6094382,6094383,6094384,6094385,6094386,6094387,6094388,6094389,6094390,6094391,6094392,6094393,6094394,6094395,6094396,6094397,6094398,6094399,6094400,6094401,6094402,6094403,6094404,6094405,6094406,6094407,6094408,6094409,6094410,6094411,6094412,6094413,6094414,6094415,6094416,6094417,6094418,6094419,6094420,6094421,6094422,6094423,6094424,6094425,6094426,6094427,6094428,6094429,6094430,6094431,6094432,6094433,6094434,6094435,6094436,6094437,6094438,6094439,6094440,6094441,6094442,6094443,6094444,6094445,6094446,6094447,6094448,6094449,6094450,6094451,6094452,6094453,6094454,6094455,6094456,6094457,6094458,6094459,6094460,6094461,6094462,6094463,6094464,6094465,6094466,6094467,6094468,6094469,6094470,6094471,6094472,6094473,6094474,6094475,6094476,6094477,6094478,6094479,6094480,6094481,6094482,6094483,6094484,6094485,6094486,6094487,6094488,6094489,6094490,6094491,6094492,6094493,6094494,6094495,6094496,6094497,6094498,6094499,6094500,6094501,6094502,6094503,6094504,6094505,6094506,6094507,6094508,6094509,6094510,6094511,6094512,6094513,6094514,6094515,6094516,6094517,6094518,6094519,6094520,6094521,6094522,6094523,6094524,6094525,6094526,6094527,6094528,6094529,6094530,6094531,6094532,6094533,6094534,6094535,6094536,6094537,6094538,6094539,6094540,6094541,6094542,6094543,6094544,6094545,6094546,6094547,6094548,6094549,6094550,6094551,6094552,6094553,6094554,6094555,6094556,6094557,6094558,6094559,6094560,6094561,6094562,6094563,6094564,6094565,6094566,6094567,6094568,6094569,6094570,6094571,6094572,6094573,6094574,6094575,6094576,6094577,6094578,6094579,6094580,6094581,6094582,6094583,6094584,6094585,6094586,6094587,6094588,6094589,6094590,6094591,6094592,6094593,6094594,6094595,6094596,6094597,6094598,6094599,6094600,6094601,6094602,6094603,6094604)) AND (`defects` IS NOT NULL)\nORDER BY `id`, `defects`",
+        "count": 1,
+        "timeMs": 0.0022680759429931640625
+    },
+    {
+        "sql": "SELECT `elapsed` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (6094260,6094261,6094262,6097975,6094263,6094264,6094265,6094266,6094267,6094268,6094269,6094270,6094271,6094272,6094273,6094274,6094275,6094276,6094277,6094278,6094279,6094280,6094281,6094282,6094283,6094284,6094285,6094286,6094287,6094288,6094289,6094290,6094291,6094292,6094293,6094294,6094295,6094296,6094297,6094298,6094299,6094300,6094301,6094302,6094303,6094304,6094305,6094306,6094307,6094308,6094309,6094310,6094311,6094312,6094313,6094314,6094315,6094316,6094317,6094318,6094319,6094320,6094321,6094322,6094323,6094324,6094325,6094326,6094327,6094328,6094329,6094330,6094331,6094332,6094333,6094334,6094335,6094336,6094337,6094338,6094339,6094340,6094341,6094342,6094343,6094344,6094345,6094346,6094347,6094348,6094349,6094350,6094351,6094352,6094353,6094354,6094355,6094356,6094357,6094358,6094359,6094360,6094361,6094362,6094363,6094364,6094365,6094366,6094367,6094368,6094369,6094370,6094371,6094372,6094373,6094374,6094375,6094376,6094377,6094378,6094379,6094380,6094381,6094382,6094383,6094384,6094385,6094386,6094387,6094388,6094389,6094390,6094391,6094392,6094393,6094394,6094395,6094396,6094397,6094398,6094399,6094400,6094401,6094402,6094403,6094404,6094405,6094406,6094407,6094408,6094409,6094410,6094411,6094412,6094413,6094414,6094415,6094416,6094417,6094418,6094419,6094420,6094421,6094422,6094423,6094424,6094425,6094426,6094427,6094428,6094429,6094430,6094431,6094432,6094433,6094434,6094435,6094436,6094437,6094438,6094439,6094440,6094441,6094442,6094443,6094444,6094445,6094446,6094447,6094448,6094449,6094450,6094451,6094452,6094453,6094454,6094455,6094456,6094457,6094458,6094459,6094460,6094461,6094462,6094463,6094464,6094465,6094466,6094467,6094468,6094469,6094470,6094471,6094472,6094473,6094474,6094475,6094476,6094477,6094478,6094479,6094480,6094481,6094482,6094483,6094484,6094485,6094486,6094487,6094488,6094489,6094490,6094491,6094492,6094493,6094494,6094495,6094496,6094497,6094498,6094499,6094500,6094501,6094502,6094503,6094504,6094505,6094506,6094507,6094508,6094509,6094510,6094511,6094512,6094513,6094514,6094515,6094516,6094517,6094518,6094519,6094520,6094521,6094522,6094523,6094524,6094525,6094526,6094527,6094528,6094529,6094530,6094531,6094532,6094533,6094534,6094535,6094536,6094537,6094538,6094539,6094540,6094541,6094542,6094543,6094544,6094545,6094546,6094547,6094548,6094549,6094550,6094551,6094552,6094553,6094554,6094555,6094556,6094557,6094558,6094559,6094560,6094561,6094562,6094563,6094564,6094565,6094566,6094567,6094568,6094569,6094570,6094571,6094572,6094573,6094574,6094575,6094576,6094577,6094578,6094579,6094580,6094581,6094582,6094583,6094584,6094585,6094586,6094587,6094588,6094589,6094590,6094591,6094592,6094593,6094594,6094595,6094596,6094597,6094598,6094599,6094600,6094601,6094602,6094603,6094604)) AND (`elapsed` IS NOT NULL)\nORDER BY `id`, `elapsed`",
+        "count": 1,
+        "timeMs": 0.002068996429443359375
+    },
+    {
+        "sql": "SELECT `version` AS `value`,`test_id`,`id` AS `test_change_id`\nFROM `test_changes`\nWHERE (`test_id` IN (6094260,6094261,6094262,6097975,6094263,6094264,6094265,6094266,6094267,6094268,6094269,6094270,6094271,6094272,6094273,6094274,6094275,6094276,6094277,6094278,6094279,6094280,6094281,6094282,6094283,6094284,6094285,6094286,6094287,6094288,6094289,6094290,6094291,6094292,6094293,6094294,6094295,6094296,6094297,6094298,6094299,6094300,6094301,6094302,6094303,6094304,6094305,6094306,6094307,6094308,6094309,6094310,6094311,6094312,6094313,6094314,6094315,6094316,6094317,6094318,6094319,6094320,6094321,6094322,6094323,6094324,6094325,6094326,6094327,6094328,6094329,6094330,6094331,6094332,6094333,6094334,6094335,6094336,6094337,6094338,6094339,6094340,6094341,6094342,6094343,6094344,6094345,6094346,6094347,6094348,6094349,6094350,6094351,6094352,6094353,6094354,6094355,6094356,6094357,6094358,6094359,6094360,6094361,6094362,6094363,6094364,6094365,6094366,6094367,6094368,6094369,6094370,6094371,6094372,6094373,6094374,6094375,6094376,6094377,6094378,6094379,6094380,6094381,6094382,6094383,6094384,6094385,6094386,6094387,6094388,6094389,6094390,6094391,6094392,6094393,6094394,6094395,6094396,6094397,6094398,6094399,6094400,6094401,6094402,6094403,6094404,6094405,6094406,6094407,6094408,6094409,6094410,6094411,6094412,6094413,6094414,6094415,6094416,6094417,6094418,6094419,6094420,6094421,6094422,6094423,6094424,6094425,6094426,6094427,6094428,6094429,6094430,6094431,6094432,6094433,6094434,6094435,6094436,6094437,6094438,6094439,6094440,6094441,6094442,6094443,6094444,6094445,6094446,6094447,6094448,6094449,6094450,6094451,6094452,6094453,6094454,6094455,6094456,6094457,6094458,6094459,6094460,6094461,6094462,6094463,6094464,6094465,6094466,6094467,6094468,6094469,6094470,6094471,6094472,6094473,6094474,6094475,6094476,6094477,6094478,6094479,6094480,6094481,6094482,6094483,6094484,6094485,6094486,6094487,6094488,6094489,6094490,6094491,6094492,6094493,6094494,6094495,6094496,6094497,6094498,6094499,6094500,6094501,6094502,6094503,6094504,6094505,6094506,6094507,6094508,6094509,6094510,6094511,6094512,6094513,6094514,6094515,6094516,6094517,6094518,6094519,6094520,6094521,6094522,6094523,6094524,6094525,6094526,6094527,6094528,6094529,6094530,6094531,6094532,6094533,6094534,6094535,6094536,6094537,6094538,6094539,6094540,6094541,6094542,6094543,6094544,6094545,6094546,6094547,6094548,6094549,6094550,6094551,6094552,6094553,6094554,6094555,6094556,6094557,6094558,6094559,6094560,6094561,6094562,6094563,6094564,6094565,6094566,6094567,6094568,6094569,6094570,6094571,6094572,6094573,6094574,6094575,6094576,6094577,6094578,6094579,6094580,6094581,6094582,6094583,6094584,6094585,6094586,6094587,6094588,6094589,6094590,6094591,6094592,6094593,6094594,6094595,6094596,6094597,6094598,6094599,6094600,6094601,6094602,6094603,6094604)) AND (`version` IS NOT NULL)\nORDER BY `id`, `version`",
+        "count": 1,
+        "timeMs": 0.0014669895172119140625
+    },
+    {
+        "sql": "SELECT *\nFROM `settings`\nWHERE (`name` = 'attachments_to_both_dbs')",
+        "count": 1,
+        "timeMs": 0.00016498565673828125
+    },
+    {
+        "sql": "UPDATE `reports` SET `status` = 2,`status_message` = NULL,`status_trace` = NULL,`executed_on` = 1725390033,`execution_time` = 28180 WHERE (`id` = 5569)",
+        "count": 1,
+        "timeMs": 0.004105091094970703125
+    },
+    {
+        "sql": "UPDATE `reports` SET `is_locked` = 0,`heartbeat` = 1725390033 WHERE (`id` = 5569)",
+        "count": 1,
+        "timeMs": 0.0019571781158447265625
+    },
+    {
+        "sql": "UPDATE `task` SET `heartbeat` = 1725390033 WHERE (`id` = 1)",
+        "count": 1,
+        "timeMs": 0.002668857574462890625
+    }
+]
